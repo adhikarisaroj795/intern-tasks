@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      section {
+        width: 1200px;
+        margin: auto;
+      }
+      .outer-yellow {
+        /* position: absolute; */
+        height: 120px;
+        background-color: yellow;
+      }
+      .inner-brown {
+        /* position: absolute; */
+        position: relative;
+        bottom: -30px;
+        /* border: 5px solid black; */
+        background-color: brown;
+        height: 60px;
+      }
+      .outer-blue {
+        /* position: relative; */
+        background-color: blue;
+        height: 320px;
+      }
+      .inner-green {
+        position: relative;
+        top: 20px;
+        height: 280px;
+        background-color: green;
+      }
+      .first-white {
+        position: relative;
+        bottom: -190px;
+        width: 100px;
+        height: 20px;
+        background-color: white;
+      }
+      .second-white {
+        position: relative;
+        bottom: -200px;
+        width: 60px;
+        height: 20px;
+        background-color: white;
+      }
+      .last-div {
+        display: flex;
+        gap: 10px;
+        /* flex: 0 0 100%; */
+      }
+      .red {
+        background-color: red;
+        width: 50%;
+        height: 300px;
+      }
+      /* .last-div {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 5px;
+      }
+      .red {
+        background-color: red;
+
+        height: 300px;
+      } */
+    </style>
+  </head>
+  <body>
+    <section>
+      <div class="outer-yellow">
+        <div class="inner-brown"></div>
+      </div>
+      <div class="outer-blue">
+        <div class="inner-green">
+          <div class="first-white"></div>
+          <div class="second-white"></div>
+        </div>
+      </div>
+      <div class="last-div">
+        <div class="red"></div>
+        <div class="red"></div>
+      </div>
+    </section>
+  </body>
+</html>

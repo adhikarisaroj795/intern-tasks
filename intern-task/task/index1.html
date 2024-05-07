@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="index1.css" />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .container {
+        width: 1200px;
+        margin: auto;
+      }
+      .row {
+        margin: 0 -10px;
+        display: flex;
+        flex-wrap: wrap;
+      }
+      .col-20 {
+        width: 20%;
+        flex: 0 0 20%;
+      }
+      .col {
+        padding: 0 10px;
+        margin-bottom: 20px;
+      }
+      .box {
+        height: 200px;
+      }
+      .box-yellow {
+        background: yellow;
+      }
+      .col-33 {
+        width: 33.33%;
+        flex: 0 0 33.33%;
+      }
+      .box-red {
+        background-color: #ff0000;
+      }
+    </style>
+  </head>
+  <body>
+    <section class="container">
+      <div class="row">
+        <div class="col col-20">
+          <div class="box box-yellow"></div>
+        </div>
+        <div class="col col-20">
+          <div class="box box-yellow"></div>
+        </div>
+        <div class="col col-20">
+          <div class="box box-yellow"></div>
+        </div>
+        <div class="col col-20">
+          <div class="box box-yellow"></div>
+        </div>
+        <div class="col col-20">
+          <div class="box box-yellow"></div>
+        </div>
+        <div class="col col-33">
+          <div class="box box-red"></div>
+        </div>
+        <div class="col col-33">
+          <div class="box box-red"></div>
+        </div>
+        <div class="col col-33">
+          <div class="box box-red"></div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
