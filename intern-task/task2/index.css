@@ -199,3 +199,120 @@ a {
   display: flex;
   justify-content: space-around;
 }
+.compledet-proj {
+  padding: 4rem 8rem;
+}
+.comp-proj-headings {
+  text-align: center;
+}
+.comp-proj-headings h2 {
+  font-size: 1.5rem;
+  padding: 10px;
+}
+.comp-proj-headings h3 {
+  font-size: 1rem;
+  padding: 15px;
+  color: rgb(96, 70, 214);
+}
+
+.comp-proj-card h4 {
+  margin: 10px 0 10px 0;
+  padding: 10px 0;
+  background-color: yellow;
+  display: inline-block;
+}
+.comp-proj-card h5 {
+  padding: 10px 0;
+}
+.comp-proj-card h2 {
+  margin-bottom: 15px;
+  color: var(--title-color);
+}
+
+.comp-proj-card button {
+  padding: 10px 20px;
+  color: var(--title-color);
+  background: transparent;
+  border-color: var(--title-color);
+  font-weight: 500;
+}
+.sell-prod-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 0;
+}
+.sell-prod-btn button {
+  padding: 15px 30px;
+  background-color: transparent;
+  border-color: red;
+  color: red;
+  font-size: 1rem;
+  font-weight: 700;
+}
+.extra-details {
+  padding: 2rem 8rem;
+}
+.container {
+  text-align: center;
+  align-items: center;
+}
+.heading-holder h1 {
+  padding-bottom: 80px;
+}
+.heading-holder h1::after {
+  content: "";
+  display: block;
+  width: 150px;
+  height: 4px;
+  background-color: red;
+  margin-top: 2.5rem;
+  margin-left: 36rem;
+}
+.heading-details h3 {
+  padding: 20px;
+  color: var(--title-color);
+  font-size: 1.5rem;
+}
+.heading-details p {
+  padding: 5px;
+  color: var(--title-color);
+  padding-bottom: 20px;
+}
+.heading-details button {
+  padding: 15px 30px;
+  background-color: transparent;
+  border-color: red;
+  color: red;
+  font-size: 1rem;
+  font-weight: 700;
+}
+footer {
+  padding: 2rem 8rem;
+  background-color: var(--title-color);
+}
+
+.fiv-col-flex {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+}
+.single-flex h2 {
+  color: skyblue;
+  padding: 10px 0;
+}
+.single-flex h3 {
+  color: #fff;
+  padding: 2px 0;
+  font-size: 15px;
+}
+.div-copyright {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+}
+.div-copyright p {
+  color: #fff;
+  font-size: 15px;
+}
