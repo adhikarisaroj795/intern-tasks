@@ -356,3 +356,19 @@ checkbox {
   margin-top: 1rem;
   background-color: red;
 }
+.last {
+  flex-basis: 50%;
+  max-width: 50%;
+}
+.dsgn-eng-details {
+  flex-basis: 50%;
+  max-width: 50%;
+}
+.flex-wrapper {
+  margin-right: calc(729px - 50vw);
+}
+.flex-wrapper img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}

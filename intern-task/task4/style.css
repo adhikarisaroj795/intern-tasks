@@ -640,3 +640,9 @@ footer {
   top: 10px;
   padding-bottom: 100px;
 }
+.footer-last {
+  padding-top: 2rem;
+}
+.flex {
+  display: flex;
+}

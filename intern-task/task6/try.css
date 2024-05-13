@@ -1,0 +1,35 @@
+.flex-container {
+  display: flex;
+}
+
+.flex-item {
+  flex: 1;
+  margin-right: 3rem;
+  text-align: center;
+  cursor: pointer;
+}
+
+.line {
+  position: relative;
+  height: 2px;
+  background-color: black;
+  margin: 3rem 0;
+}
+
+.highlight {
+  position: absolute;
+  height: 2px; /* Set height to match line thickness */
+  width: 20%;
+  background-color: white; /* Change highlight color to white */
+  top: 0; /* Align highlight with the top of the line */
+  left: 0; /* Initially position highlight at the start of the line */
+  transition: left 0.3s ease-in-out;
+}
+
+#content {
+  text-align: center;
+}
+
+.hide {
+  display: none;
+}
