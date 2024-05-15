@@ -27,6 +27,21 @@ button {
   color: #c1283c;
   background-color: transparent;
 }
+.p-btn {
+  height: 45px;
+  padding: 0 30px;
+  border: 2px solid #c1283c;
+  color: #c1283c;
+  background-color: #fff;
+  display: inline-block;
+  font-family: "bignoodle";
+  font-size: 19px;
+  font-weight: 400;
+  line-height: 40px;
+  letter-spacing: 1px;
+  box-sizing: border-box;
+  vertical-align: middle;
+}
 h2 {
   font-family: "bignoodle";
   font-size: 53px;

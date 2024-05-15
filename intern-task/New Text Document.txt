@@ -1,0 +1,10 @@
+standard size is 1440pxAV
+
+
+    top: 20px;
+    position: absolute;
+    left: 20px;
+    right: 20px;
+    z-index: -1;
+    bottom: 20px;
+    background: red;
