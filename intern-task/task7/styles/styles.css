@@ -143,7 +143,17 @@ a {
 
 
 */
+.banner-img {
+  content: "";
+  display: block;
+  position: absolute;
+  inset: 0;
 
+  height: 100%;
+  width: 100%;
+  background: #fff;
+  opacity: 0.5;
+}
 .hero-img {
   position: relative;
   width: 100%;
@@ -223,6 +233,297 @@ a {
   }
 }
 
-.two-col-sec {
-  margin-top: 5.9rem;
+.card {
+  display: flex;
+  gap: 10.8rem;
+  justify-content: center;
+  align-items: center;
+}
+.two-col-details {
+  padding-top: 90px;
+}
+.two-col-img {
+  padding-top: 80px;
+  padding-left: 65px;
+}
+.de-h::after {
+  content: "";
+  height: 4px;
+  width: 125px;
+  display: block;
+  background-color: red;
+  margin-top: 1.5rem;
+}
+.two-col-caption {
+  padding-top: 35px;
+  /* padding-left: 40px; */
+}
+.de-ul li {
+  position: relative;
+  padding-left: 40px;
+}
+.de-ul li + li {
+  margin-top: 20px;
+}
+.de-ul li:before {
+  content: "";
+  background: transparent url("../assets/img/tick.png") no-repeat scroll 0 0 /
+    contain;
+  display: block;
+  height: 25px;
+  width: 25px;
+  position: absolute;
+  inset: 0;
+}
+.de-ul li p {
+  font-size: 16px;
+  letter-spacing: 1px;
+  font-family: "Open Sans", sans-serif;
+  color: #002643;
+  padding-bottom: 20px;
+  text-align: justify;
+  line-height: 1.5;
+  font-weight: 300;
+}
+.card2 {
+  flex-direction: row-reverse;
+}
+
+.work-img img {
+  padding-right: 47.5px;
+}
+
+.mnr-details {
+  padding-top: 4.5rem;
+  padding-left: 11.5rem;
+  /* padding-bottom: 40px; */
+}
+.card-last img {
+  padding-bottom: 30px;
+}
+
+.promise-container {
+  max-width: calc(1165px + 155px);
+  margin-left: auto;
+}
+.prmise-header h3 {
+  font-family: "bignoodle";
+  font-size: 34px;
+  font-weight: 500;
+  color: #0049b6;
+  padding-left: 15px;
+}
+.card3 {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.two-col-details-last {
+  padding-top: 5rem;
+}
+.last-col {
+  position: relative;
+}
+.card-last {
+  display: flex;
+  gap: 4rem;
+}
+.rev {
+  flex-direction: row-reverse;
+}
+.hacker-img img {
+  padding-top: 3rem;
+}
+.last-hacker-sec {
+  display: flex;
+  flex-direction: row-reverse;
+  padding-top: 4.2rem;
+}
+
+.last-detailss {
+  max-width: 500px;
+  padding-left: 4.8rem;
+}
+.check-box-ul li {
+  position: relative;
+  padding-left: 40px;
+  /* padding-top: 2rem; */
+}
+.hacker-header h2::after {
+  content: "";
+  height: 4px;
+  width: 125px;
+  display: block;
+  background-color: red;
+  margin-top: 1.5rem;
+}
+.check-box-ul li h3 {
+  font-family: "bignoodle";
+  font-size: 34px;
+  font-weight: 500;
+  color: #0049b6;
+
+  /* padding-left: 15px; */
+}
+/* .check-box-ul li::before {
+  content: "";
+  background: transparent url(assets/check-box.png) no-repeat scroll 0 0 /
+    contain;
+  display: block;
+  height: 30px;
+  width: 30px;
+  position: absolute;
+  inset: 0;
+  top: 41px;
+} */
+.check-box-ul p {
+  font-size: 16px;
+  letter-spacing: 1px;
+  font-family: "Open Sans", sans-serif;
+  color: #002643;
+  padding-bottom: 0px;
+  text-align: justify;
+  line-height: 1.8;
+}
+.second-li {
+  position: relative;
+  padding-left: 40px;
+  color: red;
+}
+.second-li {
+  padding-bottom: 30px;
+}
+.first-li {
+  padding-top: 2rem;
+}
+.first-li::before {
+  content: "";
+  background: transparent url("../assets/img/check-box.png") no-repeat scroll 0
+    0 / contain;
+  display: block;
+  height: 30px;
+  width: 30px;
+  position: absolute;
+  inset: 0;
+  top: 46px;
+}
+.second-li::before {
+  content: "";
+  background: transparent url("../assets/img/check-box.png") no-repeat scroll 0
+    0 / contain;
+  display: block;
+  height: 30px;
+  width: 30px;
+  position: absolute;
+  inset: 0;
+  top: 9px;
+}
+.last-li::before {
+  content: "";
+  background: transparent url("../assets/img/check-box.png") no-repeat scroll 0
+    0 / contain;
+  display: block;
+  height: 30px;
+  width: 30px;
+  position: absolute;
+  inset: 0;
+  top: 12px;
+}
+.hacker-button {
+  padding-top: 1.8rem;
+}
+.hacker-button button {
+  text-align: center;
+  letter-spacing: 1px;
+  font-family: "bignoodle";
+  font-size: 23px;
+  font-weight: 500;
+  border: 2px solid #c1283c;
+  padding: 4px 43px;
+  transition: 0.2s ease-in-out 0s;
+  color: #c1283c;
+  background-color: transparent;
+}
+
+.vid-sec {
+  margin-top: 8rem;
+}
+.vid-section {
+  width: 100%;
+  height: 100vh;
+  & img {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+  }
+}
+
+.com-proj-headings {
+  text-align: center;
+}
+.com-proj-sec {
+  margin-top: 5.5rem;
+}
+
+.completed-proj-cards-holder {
+  margin-top: 4rem;
+  justify-content: space-between;
+}
+.com-yel {
+  display: inline-block;
+  background-color: yellow;
+  font-size: 1.2rem;
+  padding: 2px 6px;
+}
+
+.city-name {
+  font-size: 1.5rem;
+}
+.price-char {
+  font-size: 2rem;
+  color: #0082c5;
+}
+.needs-btn {
+  padding-top: 4rem;
+  text-align: center;
+}
+
+.talk-to-us-sec {
+  margin-top: 15rem;
+  text-align: center;
+  padding: 150px 0;
+  & h5 {
+    font-size: 2rem;
+    padding: 10px 0;
+  }
+  & p {
+    padding: 10px 0;
+    font-family: "Open Sans", sans-serif;
+    line-height: 2;
+  }
+}
+.talk-sec {
+  background-color: #f4f4f4;
+}
+
+.footer-sec {
+  /* margin-top: 2rem; */
+  background-color: var(--primary-color);
+}
+.five-col-footer {
+  justify-content: space-between;
+  padding: 50px 0;
+}
+
+.five-col-solo-card {
+  & h4 {
+    color: #0081c5;
+    font-size: 2rem;
+  }
+  & ul li a {
+    font-size: 1rem;
+    color: #fff;
+    font-family: "Open Sans", sans-serif;
+    text-transform: capitalize;
+  }
 }
