@@ -1,0 +1,52 @@
+.h4-advertise {
+  font-size: 2rem;
+  font-weight: 800;
+  padding-bottom: 25px;
+  font-family: "Poppins", sans-serif;
+  letter-spacing: 0;
+}
+.sec-h4 {
+  padding-bottom: 20px;
+}
+
+.solo-view-card span {
+  display: block;
+}
+.solo-view-card span:nth-child(1) {
+  background: linear-gradient(90deg, #01afa6 0%, #01b5e1 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  /* padding: 0 15px; */
+  font-size: 2.5rem;
+  font-weight: 600;
+
+  color: transparent;
+}
+.solo-view-card span:nth-child(2) {
+  color: #fff;
+  /* padding: 0 15px; */
+  font-size: 15x;
+}
+
+.four-col-views-holder {
+  position: relative;
+  justify-content: space-around;
+  /* gap: 10px; */
+  background-color: black;
+}
+.solo-view-card {
+  padding: 30px 0;
+  /* border: 5px solid red; */
+}
+.ad-details {
+  padding: 0 30px;
+}
+
+.b-left {
+  border-left: 1px solid rgba(34, 49, 85, 1);
+  border-right: 1px solid rgba(34, 49, 85, 1);
+}
+.b-left2 {
+  border-right: 1px solid rgba(34, 49, 85, 1);
+}
