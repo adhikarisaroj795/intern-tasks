@@ -78,3 +78,7 @@ p {
 .h-305 {
   height: 305px;
 }
+
+.offers-input-area li p {
+  font-size: 10px;
+}

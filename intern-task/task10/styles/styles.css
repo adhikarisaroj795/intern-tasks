@@ -166,6 +166,13 @@ header nav ul {
   font-family: "Poppins", sans-serif;
   letter-spacing: 0;
 }
+.h4-headingalll-no-pd {
+  font-size: 1.5rem;
+  font-weight: 800;
+
+  font-family: "Poppins", sans-serif;
+  letter-spacing: 0;
+}
 .four-col-img-holder {
   /* background-color: black; */
   justify-content: center;
@@ -349,7 +356,7 @@ header nav ul {
   margin-bottom: 16px;
 }
 .offers-input-area ul {
-  margin-top: 1rem;
+  margin-top: 3rem;
 }
 
 .check-box input[type="checkbox"] {
