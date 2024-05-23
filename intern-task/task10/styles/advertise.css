@@ -297,13 +297,25 @@
 .connect-form {
   flex: 0 0 55%;
 }
-
+.form-group input[type="text"]::placeholder {
+  color: #fff;
+  opacity: 1;
+}
+.drop-down-input::placeholder {
+  color: #fff;
+  opacity: 1;
+}
 .form-group input {
   padding: 8px 35px;
   background-color: black;
   color: #fff;
 }
+.text-area textarea::placeholder {
+  color: #fff;
+  opacity: 1;
+}
 .text-area textarea {
+  padding: 10px 35px;
   background-color: black;
   color: #fff;
   width: 475px;
