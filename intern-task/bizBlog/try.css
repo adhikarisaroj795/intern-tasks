@@ -1,0 +1,19 @@
+.custom-placeholder {
+  position: relative;
+}
+
+.custom-placeholder input {
+  padding-left: 30px; /* Adjust based on the width of your placeholder text */
+}
+
+.placeholder {
+  position: absolute;
+  pointer-events: none;
+  top: 2px;
+  left: 2px;
+  color: #ccc; /* Default color for "User" */
+}
+
+.placeholder span.required {
+  color: red; /* Red color for "*" */
+}

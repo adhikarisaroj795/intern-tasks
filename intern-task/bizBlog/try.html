@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Custom Placeholder</title>
+    <style>
+      .input-container {
+        position: relative;
+        margin-bottom: 20px; /* Add some spacing between input containers */
+      }
+      .input-container input {
+        width: 100%;
+        padding: 8px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+      }
+      .input-container label {
+        position: absolute;
+        left: 10px;
+        top: 50%;
+        transform: translateY(-50%);
+        pointer-events: none;
+        color: black; /* Change the default label color to black */
+      }
+      .input-container label span {
+        color: red; /* Color for the asterisk */
+      }
+      .input-container input:focus + label {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="input-container">
+      <input type="text" id="user-input" placeholder=" " />
+      <label for="user-input">user<span>*</span></label>
+    </div>
+    <div class="input-container">
+      <input type="password" id="password-input" placeholder=" " />
+      <label for="password-input">password<span>*</span></label>
+    </div>
+  </body>
+</html>
