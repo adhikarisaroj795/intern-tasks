@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="styles/styles.css" />
+    <link rel="stylesheet" href="styles/aboutus.css" />
+
     <link rel="stylesheet" href="styles/postpage.css" />
 
     <link
@@ -29,7 +31,18 @@
             </a>
           </div>
 
-          <nav>
+          <nav class="nav_navbar">
+            <div class="flex cross-container">
+              <div class="header-logo">
+                <a href="index.html">
+                  <img src="assets/img/mainlogo.png" alt="" />
+                </a>
+              </div>
+              <div class="cross" id="cross-menu">
+                <span>X</span>
+              </div>
+            </div>
+
             <ul>
               <li><a href="aboutus.html">About us</a></li>
               <li><a href="startupPage.html">Startups</a></li>
@@ -54,7 +67,13 @@
               </li>
             </ul>
           </nav>
+          <div class="menu-toggle" id="mobile-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
         </header>
+        <div class="overlay"></div>
       </section>
 
       <section class="content-section">
@@ -103,6 +122,38 @@
             <div class="four-col-card flex">
               <img src="assets/img/logo4.png" alt="" />
               <span>Tinygone</span>
+            </div>
+          </div>
+        </section>
+        <section class="featured-sponser-sec">
+          <div class="featured-sponser-holder">
+            <div class="featured-sponser-heading">
+              <h4>Featured Sponsers</h4>
+            </div>
+            <div class="btn-holder">
+              <div class="two-btn flex">
+                <div class="single-sponser-card">
+                  <img src="assets/img/logonew.png" alt="" />
+                  <span>carbonia</span>
+                </div>
+
+                <div class="single-sponser-card">
+                  <img src="assets/img/logo2.png" alt="" />
+                  <span>Waverio</span>
+                </div>
+              </div>
+
+              <div class="two-btn flex">
+                <div class="single-sponser-card">
+                  <img src="assets/img/logo3.png" alt="" />
+                  <span>Alterbone</span>
+                </div>
+
+                <div class="single-sponser-card">
+                  <img src="assets/img/logo4.png" alt="" />
+                  <span>Tinygone</span>
+                </div>
+              </div>
             </div>
           </div>
         </section>
@@ -304,7 +355,7 @@
           </div>
         </section>
 
-        <section class="newsnoffer-section m-top-3">
+        <section class="newsnoffer-section m-top-4">
           <div class="offers-and-update-holder flex">
             <div class="offers-details col-45">
               <h4 class="h4-headingall">
@@ -322,21 +373,9 @@
               </p>
             </div>
             <div class="offers-input-area col-55">
-              <div class="flex spc-btwn">
-                <div class="input-field">
-                  <input type="text" placeholder=" " id="user-input"  class="yournamef"/>
-
-                  <label for="user-input" class="user-name"
-                    >Your name<span>*</span></label
-                  >
-                </div>
-                <div class="input-field">
-                  <input type="text" placeholder=" " id="user-input" />
-
-                  <label for="user-input" class="email-add"
-                    >Email address<span>*</span></label
-                  >
-                </div>
+              <div class="input-field">
+                <input type="text" placeholder="Your name" />
+                <input type="text" placeholder="Email address" />
               </div>
               <ul>
                 <li class="check-box">
@@ -367,22 +406,22 @@
                     >Subscriber-exclusive savings & offers.
                   </p>
                 </li>
-                <li class="check-box">
-                  <input type="checkbox" />
+                <li class="check-box flx-col">
                   <div class="agreement">
+                    <input type="checkbox" />
                     <span
                       >By checking this box, I agree to the User Agreement and
                       <br />
                       Privacy Policy, and I consent to receiving receive
                       emails.</span
                     >
-                    <button class="btn-sub">Subscribe</button>
+                    <button class="btn-sub m-l-10 news-none1">Subscribe</button>
                   </div>
+                  <button class="btn-sub inlin-blk news-none">Subscribe</button>
                 </li>
               </ul>
             </div>
           </div>
-          <div class="line"></div>
         </section>
 
         <section class="m-top-2 featured-posts-section">
@@ -637,10 +676,10 @@
           <div class="line"></div>
         </section>
 
-        <section class="footer-section">
-          <footer class="flex">
+        <section class="footer-section m-top-3">
+          <footer class="flex no-flex">
             <div class="fst-footer-col flex">
-              <div>
+              <div class="footer-fst">
                 <div class="footer-logo-holder">
                   <img src="assets/img/mainlogo.png" alt="" />
                 </div>
@@ -656,6 +695,27 @@
                   <li><a href="">Advertise</a></li>
                   <li><a href="">Contact</a></li>
                 </ul>
+              </div>
+
+              <div class="mobile-quicklinks-legal m-top-2">
+                <div class="quick-links-1">
+                  <h6>Quick Links</h6>
+                  <ul>
+                    <li><a href="">About us</a></li>
+                    <li><a href="">Marketplace</a></li>
+                    <li><a href="">Startups</a></li>
+                    <li><a href="">Visionaries</a></li>
+                    <li><a href="">Advertise</a></li>
+                    <li><a href="">Contact</a></li>
+                  </ul>
+                </div>
+                <div class="quick-links-1">
+                  <h6>Legal</h6>
+                  <ul>
+                    <li><a href="">User Agreement</a></li>
+                    <li><a href="">Privacy Policy</a></li>
+                  </ul>
+                </div>
               </div>
             </div>
 

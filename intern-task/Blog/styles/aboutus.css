@@ -227,11 +227,9 @@ body {
   .about-banner-details {
     position: absolute;
     max-width: 300px;
-
     inset: 0;
-
-    left: 37px;
-    top: 200px;
+    left: 16px;
+    top: 181px;
   }
   .paragraph-sec-holder {
     flex-direction: column;

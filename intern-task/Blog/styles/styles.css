@@ -811,4 +811,7 @@ footer {
   .news-none1 {
     display: none;
   }
+  .four-col-section {
+    display: none;
+  }
 }
