@@ -134,6 +134,9 @@ body {
     flex-direction: column;
     z-index: 999;
   }
+  .featured-sponser-heading {
+    align-items: center;
+  }
 
   .h4-headingalll {
     font-weight: 800;
@@ -303,6 +306,19 @@ body {
     display: flex;
     justify-content: center;
     margin-top: 1rem;
+  }
+  .featured-sponser-sec {
+    display: block;
+  }
+  .featured-sponser-heading {
+    align-items: center;
+  }
+  .featured-sponser-holder {
+    padding: 20px 0;
+    background: linear-gradient(90deg, #01afa6 0%, #01b5e1 100%);
+  }
+  .recent-post-caption .read-more {
+    display: none;
   }
 }
 @media screen and (max-width: 350px) {

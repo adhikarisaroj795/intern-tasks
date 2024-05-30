@@ -342,3 +342,29 @@
   font-size: 10px;
   display: block;
 }
+
+@media screen and (max-width: 768px) {
+  .ad-main {
+    display: block;
+  }
+  .four-col-views-holder {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+  .featured-sec-holder {
+    flex-direction: column;
+  }
+  .featured-sponser-img {
+    flex-direction: column;
+  }
+  .fout-img-sec {
+    display: none;
+  }
+  .ideal-for-holder {
+    display: none;
+  }
+}
+@media screen and (max-width: 393px) {
+ 
+}

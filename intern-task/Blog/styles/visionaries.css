@@ -43,3 +43,56 @@
 .vision-strong {
   font-size: 16px;
 }
+
+.h5-none {
+  display: none;
+}
+.vision-agreement {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+@media screen and (max-width: 768px) {
+  .sm-dvc {
+    position: absolute;
+    max-width: 300px;
+    inset: 0;
+    left: 30px;
+    top: 60px;
+  }
+  .h5-bg {
+    display: none;
+  }
+  .h5-none {
+    display: block;
+  }
+  .share-story-input {
+    flex-direction: column;
+  }
+  .share-story-txt-area {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .share-story-input {
+    gap: 20px;
+  }
+  .share-story-txt-area textarea {
+    padding: 10px;
+    background-color: black;
+    color: #fff;
+    width: 100%;
+    height: 100px;
+  }
+  .share-story-agreement {
+    .visionaries-span {
+      display: block;
+    }
+  }
+  .share-story-agreement {
+    flex-direction: column;
+  }
+  .btn-sub {
+    width: 100%;
+  }
+}
