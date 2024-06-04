@@ -1,0 +1,83 @@
+@import url("./assets/fonts/fonts.css");
+@import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Manrope:wght@200..800&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+
+/* --------variable css------- */
+
+:root {
+  --primary-color: #1a2560;
+  --secondary-color: #3dba82;
+  --text-color: #00102e;
+
+  --font-manrope: "Manrope", sans-serif;
+  --font-raleway: "Raleway", sans-serif;
+  --font-jost: "Jost", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+.h2-heading {
+  color: #00102e;
+  font-family: var(--font-raleway);
+  font-size: 44px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+ul {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+}
+button {
+  cursor: pointer;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+.container-navbar {
+  max-width: 1240px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.container {
+  max-width: 1240px;
+  padding: 0px 10px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.gbl-btn {
+  display: inline-block;
+  font-size: 15px;
+  font-weight: 500;
+  background-color: #3dba82;
+  border-style: solid;
+  border-width: 1px 1px 1px;
+  border-color: #3dba82;
+  padding: 12px 30px 12px 30px;
+  border-radius: 5px;
+  font-family: var(--font-manrope);
+}
+.gbl-btn:hover {
+  background-color: var(--primary-color);
+}
+.h1-heading {
+  color: #00102e;
+  /* font-family: var(--font-jost) !important; */
+  font-family: "Jost", sans-serif;
+  font-weight: 600;
+  font-size: 56px;
+  text-transform: uppercase;
+  line-height: 1.1em;
+}
+
+.flex {
+  display: flex;
+}

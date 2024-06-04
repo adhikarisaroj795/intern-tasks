@@ -318,6 +318,9 @@ body {
   .recent-post-caption .read-more {
     display: none;
   }
+  .cross {
+    cursor: pointer;
+  }
 }
 @media screen and (max-width: 350px) {
   .about-banner-details {

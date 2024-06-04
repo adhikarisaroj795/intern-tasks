@@ -713,6 +713,14 @@ footer {
 .news-none {
   display: none;
 }
+.featured-post-mb {
+  display: none;
+}
+.mb-three-col-title,
+.ln-mb,
+.mb-img {
+  display: none;
+}
 
 /* ---------------- BREAKING- POINT --------------- */
 
@@ -813,5 +821,87 @@ footer {
   }
   .four-col-section {
     display: none;
+  }
+  .feature-posts {
+    flex-direction: column;
+  }
+  .featured-post-lg {
+    display: none;
+  }
+  .three-col-sec {
+    display: flex;
+    flex-direction: column;
+  }
+  .mb-three-col-title {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    & h5 {
+      font-size: 15px;
+      font-weight: 900;
+    }
+  }
+  .index-threecol-ar {
+    display: none;
+  }
+  .mb-threecol-area {
+    align-items: center;
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  /* .three-col-img {
+    flex-basis: 70%;
+  } */
+  .three-col-img {
+    width: 250px;
+    height: 100%;
+  }
+  .three-col-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+  .three-col-sec-holder {
+    border: none;
+  }
+  .three-col-details {
+    padding: 0px;
+  }
+  .ln-mb {
+    display: block;
+  }
+  .f-img {
+    width: 205px;
+    height: 84px;
+  }
+  .s-img {
+    width: 300px;
+    height: 84px;
+  }
+  .f-img,
+  .s-img {
+    object-fit: cover;
+  }
+  .mb-img {
+    display: block;
+  }
+  .desk-img {
+    display: none;
+  }
+  .banner-details p {
+    text-align: left;
+    font-size: 1rem;
+  }
+  .banner-details {
+    position: absolute;
+    bottom: 80px;
+    margin-left: 10px;
+    left: 14px;
+    color: #fff;
+    bottom: 38px;
+  }
+  .m-top-4 {
+    margin-top: 2rem;
   }
 }

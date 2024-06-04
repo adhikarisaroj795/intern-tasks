@@ -31,7 +31,18 @@
             </a>
           </div>
 
-          <nav>
+          <nav class="nav_navbar">
+            <div class="flex cross-container">
+              <div class="header-logo">
+                <a href="index.html">
+                  <img src="assets/img/mainlogo.png" alt="" />
+                </a>
+              </div>
+              <div class="cross" id="cross-menu">
+                <span>X</span>
+              </div>
+            </div>
+
             <ul>
               <li><a href="aboutus.html">About us</a></li>
               <li><a href="startupPage.html">Startups</a></li>
@@ -56,7 +67,13 @@
               </li>
             </ul>
           </nav>
+          <div class="menu-toggle" id="mobile-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
         </header>
+        <div class="overlay"></div>
       </section>
 
       <section class="content-section">
@@ -72,13 +89,17 @@
             <div class="company-list-heading flex">
               <div class="market-place-title">
                 <h4 class="h4-headingalll-no-pd">Marketplace</h4>
-                <span class="market-list-subheading"
+                <span class="market-list-subheading mrketing-plce"
                   >Digital Marketing Services / Search Engine Optimization
                   (SEO)</span
                 >
               </div>
               <div class="mrkt-plce-btn">
-                <span>Back to Marketplace</span>
+                <span class="mrketing-plce">Back to Marketplace</span>
+              </div>
+              <div class="web-bck">
+                <span style="display: block">Website</span>
+                <span style="display: block" class="baclk">Back</span>
               </div>
             </div>
 
@@ -278,6 +299,8 @@
               </div>
             </div>
             <section class="loadmore m-top-2">
+              <div class="line"></div>
+
               <div class="loadmore-area">
                 <h4 class="h4-headingalll">Load More</h4>
               </div>
@@ -285,10 +308,10 @@
             </section>
           </div>
         </section>
-        <section class="footer-section m-top-2">
-          <footer class="flex">
+        <section class="footer-section m-top-3">
+          <footer class="flex no-flex">
             <div class="fst-footer-col flex">
-              <div>
+              <div class="footer-fst">
                 <div class="footer-logo-holder">
                   <img src="assets/img/mainlogo.png" alt="" />
                 </div>
@@ -304,6 +327,27 @@
                   <li><a href="">Advertise</a></li>
                   <li><a href="">Contact</a></li>
                 </ul>
+              </div>
+
+              <div class="mobile-quicklinks-legal m-top-2">
+                <div class="quick-links-1">
+                  <h6>Quick Links</h6>
+                  <ul>
+                    <li><a href="">About us</a></li>
+                    <li><a href="">Marketplace</a></li>
+                    <li><a href="">Startups</a></li>
+                    <li><a href="">Visionaries</a></li>
+                    <li><a href="">Advertise</a></li>
+                    <li><a href="">Contact</a></li>
+                  </ul>
+                </div>
+                <div class="quick-links-1">
+                  <h6>Legal</h6>
+                  <ul>
+                    <li><a href="">User Agreement</a></li>
+                    <li><a href="">Privacy Policy</a></li>
+                  </ul>
+                </div>
               </div>
             </div>
 

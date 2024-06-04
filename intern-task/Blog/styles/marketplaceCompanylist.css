@@ -92,3 +92,63 @@
 .m-bot-1 {
   margin-bottom: 1rem;
 }
+.web-bck {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .mrketing-plce {
+    display: none !important;
+  }
+  .mrkt-plce-btn {
+    display: none !important;
+  }
+  .web-bck {
+    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .company-list-heading {
+    flex-direction: column;
+  }
+  .baclk {
+    display: block !important;
+    background-color: black;
+    color: #fff;
+    padding: 8px 20px;
+  }
+  .cmpny-list-fst-sec {
+    flex-direction: column;
+  }
+  .cmpny-list-card {
+    flex-direction: column;
+  }
+  .cmpny-list-fst-sec {
+    align-items: start;
+  }
+  .company-list-logo {
+    margin-left: 0px;
+    height: 60px;
+    width: 60px;
+  }
+  .company-list-sec-sect {
+    flex-direction: column;
+  }
+  .estblished {
+    display: flex;
+    gap: 10px;
+  }
+  .cmpny-list-card {
+    gap: 0px;
+  }
+  .company-list-sec-sect {
+    gap: 10px;
+  }
+  .view-company button {
+    width: 100%;
+  }
+  .comp-list-card-all {
+    border: none;
+  }
+}

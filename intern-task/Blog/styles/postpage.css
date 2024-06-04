@@ -86,3 +86,35 @@ p {
 .m-top-10 {
   margin-top: 10rem;
 }
+
+@media screen and (max-width: 768px) {
+  .post-page-img img {
+    width: 100%;
+    height: 100%;
+  }
+  .post-page-img img {
+    padding: 0 0px 0 0;
+  }
+  .post-page-mb {
+    display: flex;
+    flex-direction: column;
+  }
+  .floa-right {
+    height: 189px;
+    float: left;
+    margin-left: 0;
+    margin-right: 10px;
+  }
+  .fst-vr-img {
+    width: 100%;
+    height: 100%;
+  }
+  .sec-vr-img {
+    width: 100%;
+
+    height: 100%;
+  }
+  .h-305 {
+    height: 100%;
+  }
+}

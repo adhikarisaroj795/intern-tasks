@@ -439,6 +439,12 @@
   .featured-sponser-img {
     padding-right: 0px;
   }
+  .b-left2 {
+    border-top: 1px solid rgba(34, 49, 85, 1);
+  }
+  .b-left {
+    border-bottom: 1px solid rgba(34, 49, 85, 1);
+  }
 }
 
 @media screen and (max-width: 393px) {
