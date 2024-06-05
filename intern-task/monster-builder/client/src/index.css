@@ -81,3 +81,9 @@ img {
 .flex {
   display: flex;
 }
+.mt-10 {
+  margin-top: 10px;
+}
+.m-t-70 {
+  margin-top: 70px;
+}
