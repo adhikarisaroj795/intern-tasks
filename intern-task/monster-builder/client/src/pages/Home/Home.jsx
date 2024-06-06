@@ -1,8 +1,6 @@
 import React from "react";
 import "./Home.css";
 import StarGoogle from "../../components/star-excellent/StarGoogle";
-import items from "../../components/star-excellent/data";
-import GoogleSlider from "../../components/Slider/GoogleSlider";
 
 const Home = () => {
   return (
@@ -37,7 +35,7 @@ const Home = () => {
         </div>
       </section>
 
-      <GoogleSlider />
+      <StarGoogle />
 
       <section className="mt-10 who-monster-section">
         <div className="container">
@@ -354,7 +352,516 @@ const Home = () => {
             <span> contact@monsterbuilder.ai</span>
           </p>
           <div className="transforming-concept-btn">
-            <span className="gbl-btn">GET a Quote</span>
+            <span className="gbl-btn">Get a Quote</span>
+          </div>
+        </div>
+      </section>
+
+      <section className="how-it-works">
+        <div className="container">
+          <div className="fab-prot-title whychoose-mon">
+            <h2 className="h2-heading">HOW IT WORKS</h2>
+            <p>
+              As a trusted stainless steel manufacturer in Singapore with years
+              of experience under our belt, we understand the importance of
+              efficient and streamlined prototype development. With just a few
+              easy steps, you can have your prototype up and running. Let us
+              make rapid prototype development a breeze for you.
+            </p>
+          </div>
+
+          <div className="three-col-choose">
+            <div className="three-col-solo-why">
+              <div className="solo-card-three-col-why">
+                <span>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlnsXlink="http://www.w3.org/1999/xlink"
+                    xmlnsSvgjs="http://svgjs.com/svgjs"
+                    width="512"
+                    height="512"
+                    x="0"
+                    y="0"
+                    viewBox="0 0 512 512.001"
+                    style={{ enableBackground: "new 0 0 512 512" }}
+                    xmlSpace="preserve"
+                    className=""
+                  >
+                    <g>
+                      <path
+                        d="M348.945 221.64v-96.894c0-2.773-1.28-5.336-3.093-7.363L237.219 3.309C235.19 1.176 232.309 0 229.429 0H57.196C25.398 0 0 25.93 0 57.73v325.684c0 31.8 25.398 57.305 57.195 57.305h135.953C218.863 483.402 265.605 512 318.852 512c80.886 0 146.941-65.734 146.941-146.727.11-70.75-50.688-129.867-116.848-143.632ZM240.102 37.458l72.882 76.723h-47.273c-14.086 0-25.61-11.63-25.61-25.715ZM57.195 419.375c-19.953 0-35.851-16.008-35.851-35.96V57.73c0-20.062 15.898-36.386 35.851-36.386h161.563v67.12c0 25.93 21.023 47.06 46.953 47.06h61.89v83.34c-3.199-.106-5.761-.427-8.535-.427-37.242 0-71.496 14.301-97.32 36.711H86.223c-5.871 0-10.672 4.801-10.672 10.668 0 5.872 4.8 10.672 10.672 10.672h115.675c-7.578 10.672-13.875 21.344-18.78 33.082H86.222c-5.871 0-10.672 4.801-10.672 10.672 0 5.867 4.8 10.672 10.672 10.672h89.957c-2.668 10.672-4.055 22.516-4.055 34.36 0 19.206 3.734 38.203 10.457 54.21H57.195Zm261.766 71.39c-69.149 0-125.387-56.238-125.387-125.386 0-69.149 56.13-125.387 125.387-125.387 69.254 0 125.383 56.238 125.383 125.387 0 69.148-56.235 125.387-125.383 125.387Zm0 0"
+                        style={{
+                          stroke: "none",
+                          fillRule: "nonzero",
+                          fillOpacity: 1,
+                        }}
+                        fill="#00102e"
+                        data-original="#000000"
+                        className=""
+                      ></path>
+                      <path
+                        d="M86.223 223.027H194.32c5.871 0 10.672-4.804 10.672-10.672 0-5.87-4.8-10.671-10.672-10.671H86.223c-5.871 0-10.672 4.8-10.672 10.671 0 5.868 4.8 10.672 10.672 10.672ZM326.535 286.625c-2.027-2.133-4.8-3.414-7.789-3.414-2.988 0-5.762 1.281-7.789 3.414l-62.535 67.121c-4.055 4.27-3.734 11.098.535 15.047 4.27 4.055 11.203 3.734 15.258-.531l44.18-47.274v116.528c0 5.87 4.8 10.671 10.671 10.671 5.868 0 10.672-4.8 10.672-10.671V320.988l43.856 47.274c2.136 2.238 4.91 3.414 7.793 3.414 2.558 0 5.12-.961 7.254-2.883 4.27-4.055 4.59-10.777.535-15.047Zm0 0"
+                        style={{
+                          stroke: "none",
+                          fillRule: "nonzero",
+                          fillOpacity: 1,
+                        }}
+                        fill="#00102e"
+                        data-original="#000000"
+                        className=""
+                      ></path>
+                    </g>
+                  </svg>
+                </span>
+              </div>
+              <div className="how-works-details">
+                <p>
+                  <span>Step One:</span>
+                </p>
+                <p>
+                  WhatsApp or Email your drawings. Receive a quotation with 24
+                  hours
+                </p>
+              </div>
+            </div>
+            <span className="box-icon">
+              <i className="bx bx-right-arrow-alt"></i>
+            </span>
+            <div className="three-col-solo-why">
+              <div className="solo-card-three-col-why">
+                <span>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlnsXlink="http://www.w3.org/1999/xlink"
+                    xmlnsSvgjs="http://svgjs.com/svgjs"
+                    width="512"
+                    height="512"
+                    x="0"
+                    y="0"
+                    viewBox="0 0 480 480"
+                    xmlSpace="preserve"
+                  >
+                    <g>
+                      <path
+                        d="M474.387 103.496a7.677 7.677 0 0 0-.41-2.055c-.086-.257-.153-.504-.262-.754a8.034 8.034 0 0 0-1.602-2.343l-96-96a7.872 7.872 0 0 0-2.351-1.602c-.239-.11-.48-.176-.727-.262a7.873 7.873 0 0 0-2.097-.417c-.137.027-.282-.063-.45-.063h-240c-22.078.027-39.972 17.918-40 40v58.879C35.492 123.133 0 177.57 0 237.679c0 60.11 35.492 114.548 90.488 138.801V440c.028 22.082 17.922 39.973 40 40h304c22.082-.027 39.977-17.918 40-40V104c0-.176-.086-.328-.101-.504zM447.176 96h-60.688a8 8 0 0 1-8-8V27.312zM16.168 237.68a135.82 135.82 0 0 1 136-136c4.547 0 9.059.222 13.512.656 61.86 6.113 111.644 53.496 120.808 114.977a137.334 137.334 0 0 1 1.672 20.367 134.904 134.904 0 0 1-20.87 72.382 135.395 135.395 0 0 1-42.794 42.778c-41.91 26.32-94.808 27.797-138.121 3.851-43.312-23.941-70.2-69.523-70.207-119.011zm228.914 120.175a173.013 173.013 0 0 0 3.246-2.558c3.95-3.18 7.73-6.559 11.336-10.121a150.363 150.363 0 0 0 10.121-11.328c.871-1.07 1.711-2.16 2.559-3.254.969-1.266 2.02-2.465 2.945-3.754l68.2 68.281a23.822 23.822 0 0 1 7.058 16.922 23.83 23.83 0 0 1-7.059 16.926c-9.445 9.129-24.425 9.129-33.87 0l-68.29-68.168c1.29-.938 2.496-1.977 3.754-2.946zM434.488 464h-304c-13.254 0-24-10.746-24-24v-57.273c.496.16 1.016.265 1.52.418 1.281.39 2.578.703 3.875 1.062 2.992.8 6.008 1.602 9.055 2.2 1.496.312 2.992.6 4.503.866 3.047.536 6.122.957 9.207 1.313 1.38.156 2.739.352 4.122.469 4.433.379 8.894.625 13.398.625a151 151 0 0 0 75.355-20.078l70.735 70.664a39.995 39.995 0 0 0 39.289 11.808 39.991 39.991 0 0 0 29.023-28.996 39.988 39.988 0 0 0-11.777-39.3L284.09 313.03a150.957 150.957 0 0 0 20.078-75.351c0-5.067-.242-10.094-.734-15.078a151.2 151.2 0 0 0-43.762-92.41A151.007 151.007 0 0 0 152.168 85.68c-4.504 0-8.965.25-13.398.625-1.383.12-2.754.312-4.13.472-3.077.344-6.136.782-9.183 1.313-1.52.265-3.035.555-4.543.87-3.008.626-5.992 1.36-8.953 2.177-1.328.36-2.656.68-4 1.078-.496.152-1 .258-1.496.418V40c0-13.254 10.746-24 24-24h232.023v72c0 13.254 10.746 24 24 24h72v328c0 13.254-10.742 24-24 24zm0 0"
+                        fill="#00102E"
+                        data-original="#000000"
+                      ></path>
+                      <path
+                        d="M330.488 56a8 8 0 0 0-8-8h-176a8 8 0 0 0 0 16h176a8 8 0 0 0 8-8zM418.488 192h-96a8 8 0 0 0 0 16h96a8 8 0 0 0 0-16zM418.488 240h-96a8 8 0 0 0 0 16h96a8 8 0 0 0 0-16zM426.488 296a8 8 0 0 0-8-8h-104a8 8 0 0 0 0 16h104a8 8 0 0 0 8-8zM426.488 344a8 8 0 0 0-8-8h-72a8 8 0 0 0 0 16h72a8 8 0 0 0 8-8zM330.488 104a8 8 0 0 0-8-8h-64a8 8 0 0 0 0 16h64a8 8 0 0 0 8-8zM426.488 152a8 8 0 0 0-8-8h-120a8 8 0 0 0 0 16h120a8 8 0 0 0 8-8zM122.488 200h56a8 8 0 0 0 0-16h-56a8 8 0 0 0 0 16zM218.488 240a8 8 0 0 0-8-8h-120a8 8 0 0 0 0 16h120a8 8 0 0 0 8-8zM178.488 280h-56a8 8 0 0 0 0 16h56a8 8 0 0 0 0-16zm0 0"
+                        fill="#00102E"
+                        data-original="#000000"
+                      ></path>
+                      <path
+                        d="M209.113 343.2a117.32 117.32 0 0 0 46.672-45.27c.633-1.106 1.32-2.176 1.914-3.297.309-.578.551-1.176.848-1.754 1.215-2.336 2.398-4.672 3.445-7.063 1.051-2.39 1.875-4.664 2.73-7.015.247-.68.56-1.344.801-2.031 20.344-59.16-8.171-124.028-65.515-149.032-57.348-25.004-124.281-1.754-153.781 53.414a119.287 119.287 0 0 0-14.075 56.496c-.074 42.282 22.133 81.473 58.442 103.137 36.308 21.668 81.344 22.602 118.52 2.461zm-106.8-14.255A103.217 103.217 0 0 1 78.624 311.2 105.334 105.334 0 0 1 65.57 295.32a104.428 104.428 0 0 1-5.226-8.71c-24.078-45.465-11.32-101.704 30.02-132.325 41.34-30.62 98.855-26.433 135.327 9.852 32.301 32.605 39.567 82.465 17.918 122.933v.067a102.237 102.237 0 0 1-42.015 41.992 103.7 103.7 0 0 1-99.281-.152zM434.488 384a8 8 0 0 0-8 8v32a8 8 0 0 1-8 8h-32a8 8 0 0 0 0 16h32c13.258 0 24-10.746 24-24v-32a8 8 0 0 0-8-8zm0 0"
+                        fill="#00102E"
+                        data-original="#000000"
+                      ></path>
+                    </g>
+                  </svg>
+                </span>
+              </div>
+
+              <div className="how-works-details">
+                <p>
+                  <span>Step Two:</span>
+                </p>
+                <p>
+                  You will receive an invoice when the quotation is accepted,
+                  which you may pay with a credit card or a bank transfer.
+                </p>
+              </div>
+            </div>
+            <span className="box-icon">
+              <i className="bx bx-right-arrow-alt"></i>
+            </span>
+            <div className="three-col-solo-why">
+              <div className="solo-card-three-col-why last-svg">
+                <span>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:svgjs="http://svgjs.com/svgjs"
+                    xmlnsXlink="http://www.w3.org/1999/xlink"
+                    xmlSpace="preserve"
+                    width={512}
+                    height={512}
+                    className="last-svg"
+                    style={{
+                      enableBackground: "new 0 0 512 512",
+                    }}
+                    viewBox="0 0 682.667 682.667"
+                  >
+                    <defs>
+                      <clipPath id="a" clipPathUnits="userSpaceOnUse">
+                        <path
+                          fill="#00102e"
+                          d="M0 512h512V0H0Z"
+                          data-original="#000000"
+                        />
+                      </clipPath>
+                    </defs>
+                    <g
+                      fill="none"
+                      stroke="#00102e"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeMiterlimit={10}
+                      strokeWidth={20}
+                      clipPath="url(#a)"
+                      transform="matrix(1.33333 0 0 -1.33333 0 682.667)"
+                    >
+                      <path
+                        d="M152.059 10H19.132v51.538h132.927z"
+                        data-original="#000000"
+                        style={{
+                          strokeWidth: 20,
+                          strokeLinecap: "round",
+                          strokeLinejoin: "round",
+                          strokeMiterlimit: 10,
+                          strokeDasharray: "none",
+                          strokeOpacity: 1,
+                        }}
+                      />
+                      <path
+                        d="M0 0c0-31.012-25.14-56.151-56.151-56.151-31.012 0-56.152 25.139-56.152 56.151 0 31.012 25.14 56.152 56.152 56.152C-25.14 56.152 0 31.012 0 0Z"
+                        data-original="#000000"
+                        style={{
+                          strokeWidth: 20,
+                          strokeLinecap: "round",
+                          strokeLinejoin: "round",
+                          strokeMiterlimit: 10,
+                          strokeDasharray: "none",
+                          strokeOpacity: 1,
+                        }}
+                        transform="translate(138.614 272.263)"
+                      />
+                      <path
+                        d="M0 0h-132.927l27.255 167.709c9.755-8.209 22.345-13.134 36.077-13.134 14.339 0 27.42 5.373 37.345 14.222z"
+                        data-original="#000000"
+                        style={{
+                          strokeWidth: 20,
+                          strokeLinecap: "round",
+                          strokeLinejoin: "round",
+                          strokeMiterlimit: 10,
+                          strokeDasharray: "none",
+                          strokeOpacity: 1,
+                        }}
+                        transform="translate(152.06 61.536)"
+                      />
+                      <path
+                        d="m0 0-134.788-158.647c-2.452 28.763-26.557 51.333-55.949 51.333-.278 0-.555 0-.832-.011L-43.796 39.339a34.101 34.101 0 0 1-.735-7.047c0-18.752 15.213-33.966 33.976-33.966C-6.866-1.674-3.326-1.087 0 0z"
+                        data-original="#000000"
+                        style={{
+                          strokeWidth: 20,
+                          strokeLinecap: "round",
+                          strokeLinejoin: "round",
+                          strokeMiterlimit: 10,
+                          strokeDasharray: "none",
+                          strokeOpacity: 1,
+                        }}
+                        transform="translate(273.201 435.729)"
+                      />
+                      <path
+                        d="M0 0v-42.548h-148.274a33.733 33.733 0 0 1 4.968 17.686c0 9.819-4.169 18.668-10.832 24.862z"
+                        data-original="#000000"
+                        style={{
+                          strokeWidth: 20,
+                          strokeLinecap: "round",
+                          strokeLinejoin: "round",
+                          strokeMiterlimit: 10,
+                          strokeDasharray: "none",
+                          strokeOpacity: 1,
+                        }}
+                        transform="translate(439.93 492.883)"
+                      />
+                      <path
+                        d="M0 0h-162.599l20.137 174.985h122.325z"
+                        data-original="#000000"
+                        style={{
+                          strokeWidth: 20,
+                          strokeLinecap: "round",
+                          strokeLinejoin: "round",
+                          strokeMiterlimit: 10,
+                          strokeDasharray: "none",
+                          strokeOpacity: 1,
+                        }}
+                        transform="translate(470.54 10)"
+                      />
+                      <path
+                        d="M0 0h207.257"
+                        data-original="#000000"
+                        style={{
+                          strokeWidth: 20,
+                          strokeLinecap: "round",
+                          strokeLinejoin: "round",
+                          strokeMiterlimit: 10,
+                          strokeDasharray: "none",
+                          strokeOpacity: 1,
+                        }}
+                        transform="translate(285.61 184.985)"
+                      />
+                      <path
+                        d="M422.276 184.985h-66.074v65.651h66.074z"
+                        data-original="#000000"
+                        style={{
+                          strokeWidth: 20,
+                          strokeLinecap: "round",
+                          strokeLinejoin: "round",
+                          strokeMiterlimit: 10,
+                          strokeDasharray: "none",
+                          strokeOpacity: 1,
+                        }}
+                      />
+                      <path
+                        d="M0 0v-69.537l20.807-44.145 19.786 44.145V0Z"
+                        data-original="#000000"
+                        style={{
+                          strokeWidth: 20,
+                          strokeLinecap: "round",
+                          strokeLinejoin: "round",
+                          strokeMiterlimit: 10,
+                          strokeDasharray: "none",
+                          strokeOpacity: 1,
+                        }}
+                        transform="translate(367.426 450.332)"
+                      />
+                      <path
+                        d="M0 0v-34.648"
+                        data-original="#000000"
+                        style={{
+                          strokeWidth: 20,
+                          strokeLinecap: "round",
+                          strokeLinejoin: "round",
+                          strokeMiterlimit: 10,
+                          strokeDasharray: "none",
+                          strokeOpacity: 1,
+                        }}
+                        transform="translate(388.232 336.65)"
+                      />
+                      <path
+                        d="M0 0c0-18.763-15.21-33.973-33.973-33.973-18.763 0-33.973 15.21-33.973 33.973 0 18.763 15.21 33.973 33.973 33.973C-15.21 33.973 0 18.763 0 0Z"
+                        data-original="#000000"
+                        style={{
+                          strokeWidth: 20,
+                          strokeLinecap: "round",
+                          strokeLinejoin: "round",
+                          strokeMiterlimit: 10,
+                          strokeDasharray: "none",
+                          strokeOpacity: 1,
+                        }}
+                        transform="translate(296.619 468.027)"
+                      />
+                      <path
+                        d="M0 0c0-11.493-9.317-20.811-20.811-20.811-11.493 0-20.81 9.318-20.81 20.811s9.317 20.811 20.81 20.811C-9.317 20.811 0 11.493 0 0Z"
+                        data-original="#000000"
+                        style={{
+                          strokeWidth: 20,
+                          strokeLinecap: "round",
+                          strokeLinejoin: "round",
+                          strokeMiterlimit: 10,
+                          strokeDasharray: "none",
+                          strokeOpacity: 1,
+                        }}
+                        transform="translate(103.273 272.263)"
+                      />
+                      <path
+                        d="M0 0v-58.095"
+                        data-original="#000000"
+                        style={{
+                          strokeWidth: 20,
+                          strokeLinecap: "round",
+                          strokeLinejoin: "round",
+                          strokeMiterlimit: 10,
+                          strokeDasharray: "none",
+                          strokeOpacity: 1,
+                        }}
+                        transform="translate(83.148 216.111)"
+                      />
+                      <path
+                        d="M0 0v0"
+                        data-original="#000000"
+                        style={{
+                          strokeWidth: 20,
+                          strokeLinecap: "round",
+                          strokeLinejoin: "round",
+                          strokeMiterlimit: 10,
+                          strokeDasharray: "none",
+                          strokeOpacity: 1,
+                        }}
+                        transform="translate(83.148 112.991)"
+                      />
+                    </g>
+                  </svg>
+                </span>
+              </div>
+              <div className="how-works-details">
+                <p>
+                  <span>Step Three:</span>
+                </p>
+                <p>
+                  Once payment is done, we proceed with fabrication immediately.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div className="how-btn">
+            <span className="gbl-btn">Get a Quote</span>
+          </div>
+        </div>
+      </section>
+
+      <section className="advance-fab-soln">
+        <div className="container">
+          <div className="whychoose-mon">
+            <h2 className="h2-heading">ADVANCED FABRICATION SOLUTIONS</h2>
+            <div className="fab-prot-title">
+              <p>
+                Our advanced steel fabrication services and solutions are a
+                source of pride for us, as we use state-of-the-art equipment to
+                manufacture precision parts and components of the highest
+                quality for a range of industries, including Research and
+                development, Automotive, Education, Aerospace, Medical, Robotics
+                and Electronics.
+              </p>
+            </div>
+          </div>
+          <div className="advance-fab-album">
+            <div className="adv-fab-col1">
+              <div className="solo-adv-img-wrapper">
+                <div className="adv-img">
+                  <img
+                    src="images/afs_1.jpg"
+                    alt=""
+                    className="grayscale-img"
+                  />
+                </div>
+                <div className="adv-title">
+                  <p>AUTOMOBILE</p>
+                </div>
+              </div>
+              <div className="solo-adv-img-wrapper">
+                <div className="adv-img">
+                  <img
+                    src="images/afs_2.jpg"
+                    alt=""
+                    className="grayscale-img"
+                  />
+                </div>
+                <div className="adv-title">
+                  <p>AEROSPACE</p>
+                </div>
+              </div>
+              <div className="solo-adv-img-wrapper">
+                <div className="adv-img">
+                  <img
+                    src="images/afs_3.jpg"
+                    alt=""
+                    className="grayscale-img"
+                  />
+                </div>
+                <div className="adv-title">
+                  <p>MEDICAL</p>
+                </div>
+              </div>
+              <div className="solo-adv-img-wrapper">
+                <div className="adv-img">
+                  <img
+                    src="images/afs_4.jpg"
+                    alt=""
+                    className="grayscale-img"
+                  />
+                </div>
+                <div className="adv-title">
+                  <p>SMART APPLIANCES</p>
+                </div>
+              </div>
+            </div>
+            <div className="adv-fab-col1">
+              <div className="solo-adv-img-wrapper">
+                <div className="adv-img">
+                  <img
+                    src="images/afs_5.jpg"
+                    alt=""
+                    className="grayscale-img"
+                  />
+                </div>
+                <div className="adv-title">
+                  <p>INDUSTRIAL ROBOT</p>
+                </div>
+              </div>
+              <div className="solo-adv-img-wrapper">
+                <div className="adv-img">
+                  <img
+                    src="images/afs_6.jpg"
+                    alt=""
+                    className="grayscale-img"
+                  />
+                </div>
+                <div className="adv-title">
+                  <p>SCHOOL LAB</p>
+                </div>
+              </div>
+              <div className="solo-adv-img-wrapper">
+                <div className="adv-img">
+                  <img
+                    src="images/afs_7.jpg"
+                    alt=""
+                    className="grayscale-img"
+                  />
+                </div>
+                <div className="adv-title">
+                  <p>ELECTRONIC APPLIANCES</p>
+                </div>
+              </div>
+              <div className="solo-adv-img-wrapper">
+                <div className="adv-img">
+                  <img
+                    src="images/afs_8.jpg"
+                    alt=""
+                    className="grayscale-img"
+                  />
+                </div>
+                <div className="adv-title">
+                  <p>AUTOMATION</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="our-client">
+        <div className="container our-client-main">
+          <h2 className="h2-heading-robo">Our client</h2>
+          <div className="client-img-holder">
+            <div className="client-our-img">
+              <div className="client-img-1">
+                <img src="images/ourclient1.png" alt="" />
+              </div>
+              <div className="client-img-2">
+                <img src="images/ourclient2.png" alt="" />
+              </div>
+              <div className="client-img-3">
+                <img src="images/ourclient3.png" alt="" />
+              </div>
+              <div className="client-img-4">
+                <img src="images/ourclient4.jpg" alt="" />
+              </div>
+            </div>
+            <div className="client-our-img">
+              <div className="client-img-5">
+                <img src="images/ourclient5.png" alt="" />
+              </div>
+              <div className="client-img-5">
+                <img src="images/ourclient6.png" alt="" />
+              </div>
+              <div className="client-img-5">
+                <img src="images/ourclient8.png" alt="" />
+              </div>
+              <div className="client-img-5">
+                <img src="images/ourclient9.png" alt="" />
+              </div>
+            </div>
           </div>
         </div>
       </section>

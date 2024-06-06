@@ -1,149 +1,82 @@
-const items = [
+const data = [
   {
     id: 1,
-    title: "Item 1",
-    imageUrl: "url-to-item-1.jpg",
-    description: "Description for Item 1",
+    name: "Phoebe Tan",
+    time: "1 month ago",
+    image: "images/1.png",
+    description:
+      "1st time liaise with them. Prompt response with excellent service. Thank you, Super Tomato.",
   },
   {
     id: 2,
-    title: "Item 2",
-    imageUrl: "url-to-item-2.jpg",
-    description: "Description for Item 2",
+    name: "Koh Ci En",
+    time: "2 months ago",
+    image: "images/2.jpg",
+
+    description:
+      "Items seems sturdy and the team is quick to respond. One thing is the wheels used for the partition can be changed to something more study but the team is quick to provide remedy (i.e., provide more wheels) for free.",
+  },
+  {
+    id: 3,
+
+    name: "kimberly koh",
+    time: "2 months ago",
+    image: "images/3.jpg",
+
+    description: "Very patient with me on the design, fast and efficient",
   },
   {
     id: 1,
-    title: "Item 1",
-    imageUrl: "url-to-item-1.jpg",
-    description: "Description for Item 1",
+    name: "Phoebe Tan",
+    time: "1 month ago",
+    image: "images/1.png",
+    description:
+      "1st time liaise with them. Prompt response with excellent service. Thank you, Super Tomato.",
   },
   {
     id: 2,
-    title: "Item 2",
-    imageUrl: "url-to-item-2.jpg",
-    description: "Description for Item 2",
+    name: "Koh Ci En",
+    time: "2 months ago",
+    image: "images/2.jpg",
+
+    description:
+      "Items seems sturdy and the team is quick to respond. One thing is the wheels used for the partition can be changed to something more study but the team is quick to provide remedy (i.e., provide more wheels) for free.",
+  },
+  {
+    id: 3,
+
+    name: "kimberly koh",
+    time: "2 months ago",
+    image: "images/3.jpg",
+
+    description: "Very patient with me on the design, fast and efficient",
   },
   {
     id: 1,
-    title: "Item 1",
-    imageUrl: "url-to-item-1.jpg",
-    description: "Description for Item 1",
+    name: "Phoebe Tan",
+    time: "1 month ago",
+    image: "images/1.png",
+    description:
+      "1st time liaise with them. Prompt response with excellent service. Thank you, Super Tomato.",
   },
   {
     id: 2,
-    title: "Item 2",
-    imageUrl: "url-to-item-2.jpg",
-    description: "Description for Item 2",
+    name: "Koh Ci En",
+    time: "2 months ago",
+    image: "images/2.jpg",
+
+    description:
+      "Items seems sturdy and the team is quick to respond. One thing is the wheels used for the partition can be changed to something more study but the team is quick to provide remedy (i.e., provide more wheels) for free.",
   },
   {
-    id: 1,
-    title: "Item 1",
-    imageUrl: "url-to-item-1.jpg",
-    description: "Description for Item 1",
+    id: 3,
+
+    name: "kimberly koh",
+    time: "2 months ago",
+    image: "images/3.jpg",
+
+    description: "Very patient with me on the design, fast and efficient",
   },
-  {
-    id: 2,
-    title: "Item 2",
-    imageUrl: "url-to-item-2.jpg",
-    description: "Description for Item 2",
-  },
-  {
-    id: 1,
-    title: "Item 1",
-    imageUrl: "url-to-item-1.jpg",
-    description: "Description for Item 1",
-  },
-  {
-    id: 2,
-    title: "Item 2",
-    imageUrl: "url-to-item-2.jpg",
-    description: "Description for Item 2",
-  },
-  {
-    id: 1,
-    title: "Item 1",
-    imageUrl: "url-to-item-1.jpg",
-    description: "Description for Item 1",
-  },
-  {
-    id: 2,
-    title: "Item 2",
-    imageUrl: "url-to-item-2.jpg",
-    description: "Description for Item 2",
-  },
-  {
-    id: 1,
-    title: "Item 1",
-    imageUrl: "url-to-item-1.jpg",
-    description: "Description for Item 1",
-  },
-  {
-    id: 2,
-    title: "Item 2",
-    imageUrl: "url-to-item-2.jpg",
-    description: "Description for Item 2",
-  },
-  {
-    id: 1,
-    title: "Item 1",
-    imageUrl: "url-to-item-1.jpg",
-    description: "Description for Item 1",
-  },
-  {
-    id: 2,
-    title: "Item 2",
-    imageUrl: "url-to-item-2.jpg",
-    description: "Description for Item 2",
-  },
-  {
-    id: 1,
-    title: "Item 1",
-    imageUrl: "url-to-item-1.jpg",
-    description: "Description for Item 1",
-  },
-  {
-    id: 2,
-    title: "Item 2",
-    imageUrl: "url-to-item-2.jpg",
-    description: "Description for Item 2",
-  },
-  {
-    id: 1,
-    title: "Item 1",
-    imageUrl: "url-to-item-1.jpg",
-    description: "Description for Item 1",
-  },
-  {
-    id: 2,
-    title: "Item 2",
-    imageUrl: "url-to-item-2.jpg",
-    description: "Description for Item 2",
-  },
-  {
-    id: 1,
-    title: "Item 1",
-    imageUrl: "url-to-item-1.jpg",
-    description: "Description for Item 1",
-  },
-  {
-    id: 2,
-    title: "Item 2",
-    imageUrl: "url-to-item-2.jpg",
-    description: "Description for Item 2",
-  },
-  {
-    id: 1,
-    title: "Item 1",
-    imageUrl: "url-to-item-1.jpg",
-    description: "Description for Item 1",
-  },
-  {
-    id: 2,
-    title: "Item 2",
-    imageUrl: "url-to-item-2.jpg",
-    description: "Description for Item 2",
-  },
-  // Add more items as needed
 ];
 
-export default items;
+export default data;
