@@ -8,6 +8,7 @@ import Contact from "./pages/contact/Contact";
 import Faqs from "./pages/faqs/Faqs";
 import Services from "./pages/serviceas/Services";
 import Accordion from "./pages/accordion/Accordion";
+import Footer from "./components/footer/Footer";
 
 const App = () => {
   return (
@@ -22,6 +23,7 @@ const App = () => {
         <Route path="/services" element={<Services />} />
         <Route path="/accordion" element={<Accordion />} />
       </Routes>
+      <Footer />
     </BrowserRouter>
   );
 };

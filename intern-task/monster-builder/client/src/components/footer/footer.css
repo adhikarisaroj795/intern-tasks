@@ -1,0 +1,116 @@
+.footer-sec {
+  background-color: #1a2560;
+  padding: 50px 0;
+}
+
+.footer-img img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.footer-contact-detail p {
+  color: #ffffff;
+  font-family: var(--font-manrope);
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.7;
+}
+.footer-contact-detail a {
+  color: #3dba82;
+}
+.footer-our-loc p {
+  color: #ffffff;
+  font-family: var(--font-manrope);
+  font-size: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+.footer-our-loc p::after {
+  content: "";
+  display: block;
+  height: 2px;
+  width: 30px;
+  background-color: #3dba82;
+  margin-top: 20px;
+}
+.singapore-quarter p {
+  color: #ffffff;
+  font-family: var(--font-manrope);
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.7;
+  &strong {
+    font-weight: 700;
+  }
+}
+.footer-tuv {
+  width: 150px;
+  height: auto;
+  margin-top: 10px;
+  display: flex;
+  justify-content: flex-end;
+}
+.footer-tuv img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.footer-contact-detail {
+  margin-top: 10px;
+}
+.footer-our-loc {
+  margin-top: 20px;
+}
+.singapore-quarter {
+  margin-top: 20px;
+}
+.footer-heading p {
+  color: #ffffff;
+  font-family: var(--font-manrope);
+  font-size: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+.footer-heading p::after {
+  content: "";
+  display: block;
+  height: 2px;
+  width: 30px;
+  background-color: #3dba82;
+  margin-top: 20px;
+}
+.foorter-links-ul {
+  margin-top: 20px;
+}
+.foorter-links-ul ul li {
+  padding-bottom: 10px;
+}
+.foorter-links-ul ul li a {
+  font-family: var(--font-manrope);
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+.foorter-links-ul ul li a span {
+  color: #ffffff;
+  transition: color 0.3s;
+}
+
+.footer-fst-col {
+  padding: 10px;
+}
+.footer-services {
+  padding: 10px;
+}
+.tuv-wrapper {
+  display: flex;
+  justify-content: flex-end;
+}
+
+footer {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
