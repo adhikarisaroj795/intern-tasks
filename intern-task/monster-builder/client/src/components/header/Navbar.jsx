@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./Navbar.css";
 
 const Navbar = () => {
@@ -12,16 +13,16 @@ const Navbar = () => {
           <nav>
             <ul>
               <li>
-                <a href="">Home</a>
+                <Link to="/">Home</Link>
               </li>
               <li>
-                <a href="">About Us</a>
+                <Link to={"/aboutus"}>About Us</Link>
               </li>
               <li className="svc_arrow1">
-                <a href="">
+                <Link to="/services">
                   Services
                   <span className="svc_arrow"></span>
-                </a>
+                </Link>
 
                 <div className="nav-modal">
                   <ul>
@@ -53,13 +54,13 @@ const Navbar = () => {
                 </div>
               </li>
               <li>
-                <a href="">FAQs</a>
+                <Link to={"faqs"}>FAQs</Link>
               </li>
               <li>
-                <a href="">Blog</a>
+                <Link to={"blog"}>Blog</Link>
               </li>
               <li>
-                <a href="">Contact</a>
+                <Link to={"contact"}>Contact</Link>
               </li>
               <li>
                 <a href="" className="gbl-btn">
