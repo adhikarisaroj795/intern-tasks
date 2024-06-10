@@ -1,0 +1,207 @@
+.aboutus-banner {
+  position: relative;
+  min-height: 250px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("images/aboutUbanner.jpg");
+}
+
+.about-us-heading {
+  min-height: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.about-h1 {
+  z-index: 2;
+  color: #ffffff;
+  font-family: var(--font-raleway);
+  font-size: 50px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.overlay-about-us {
+  position: absolute;
+  background-color: #000000;
+  opacity: 0.5;
+  transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.commited-img-details .sub-headng {
+  color: #00102e;
+  font-family: var(--font-raleway);
+  font-size: 20px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+.commited-img-details .about-us-h3-heading {
+  margin-top: 5px;
+  color: #00102e;
+  font-family: var(--font-raleway);
+  font-size: 44px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+.commited-to-quality {
+  margin-bottom: 20px;
+}
+.about-us-h3-heading::after {
+  content: "";
+  height: 4px;
+  width: 60px;
+  background-color: #3dba82;
+  display: block;
+  margin-top: 10px;
+}
+.commited-img-details p {
+  color: #000000;
+  font-family: var(--font-manrope);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.7;
+}
+.commited-img {
+  flex: 0 0 calc(45% - 12px);
+}
+.commited-img img {
+  width: 545px;
+  height: 365px;
+}
+.commited-img-details {
+  flex: 0 0 calc(55% - 12px);
+}
+
+.about-us-tick ul li span {
+  font-family: var(--font-manrope);
+  font-size: 16px;
+  font-weight: 500;
+  padding-inline-start: 5px;
+}
+
+.about-us-tick ul li {
+  position: relative;
+  padding-left: 25px;
+  margin-bottom: 10px;
+}
+.about-us-tick ul li::before {
+  content: "\f00c";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: #3dba82;
+  font-size: 1.5em;
+}
+.commitedto-quality {
+  justify-content: space-between;
+}
+.commitedto-qualityP {
+  justify-content: space-between;
+}
+.about-us-tick {
+  gap: 150px;
+}
+.mtop-80px {
+  margin-top: 60px;
+}
+.about-us-tick {
+  margin-top: 10px;
+}
+.slider {
+  margin-top: 75px;
+}
+.about-us-robo-bg {
+  background-image: url("images/about-us-robot.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 750px;
+  transition: background-position 0.5s ease;
+}
+.about-us-robo-bg:hover {
+  background-position: center calc(50% + 10px);
+}
+.about-us-robo-details {
+  flex: 0 0 50%;
+  margin-left: auto;
+  z-index: 5;
+}
+.about-us-robo-details .about-us-robo-h3 {
+  font-size: 20px;
+  color: #ffffff;
+  font-family: var(--font-raleway);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  line-height: 1;
+  margin-top: 100px;
+}
+.about-us-title-h3 {
+  margin-top: 20px;
+  color: #ffffff;
+  font-family: var(--font-raleway);
+  font-size: 44px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+.about-us-title-h3::after {
+  content: "";
+  height: 5px;
+  width: 62px;
+  display: block;
+  background-color: #3dba82;
+  margin-top: 15px;
+}
+
+.about-us-robo-p p {
+  & span {
+    color: #3dba82;
+  }
+  color: #ffffff;
+  font-family: var(--font-manrope);
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: 0.3px;
+  line-height: 1.7;
+}
+
+.about-us-robo-p .about-us-tick ul li span {
+  color: #ffffff;
+  font-family: var(--font-manrope);
+  font-size: inherit;
+  font-weight: 500;
+}
+
+.about-us-robo {
+  position: relative;
+}
+.overlay-aboutus-robo {
+  background-color: transparent;
+  background-image: linear-gradient(90deg, #ffffff00 10%, #1a2560 50%);
+  opacity: 1;
+  transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+.mtop-25px {
+  margin-top: 25px;
+}
+
+.about-us-robo-p p:nth-child(2) {
+  margin-top: 25px;
+}
+.pd-btm {
+  padding-bottom: 35px;
+}

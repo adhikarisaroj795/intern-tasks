@@ -7,7 +7,7 @@ import Blog from "./pages/blog/Blog";
 import Contact from "./pages/contact/Contact";
 import Faqs from "./pages/faqs/Faqs";
 import Services from "./pages/serviceas/Services";
-import Accordion from "./pages/accordion/Accordion";
+
 import Footer from "./components/footer/Footer";
 
 const App = () => {
@@ -21,7 +21,6 @@ const App = () => {
         <Route path="/contact" element={<Contact />} />
         <Route path="/faqs" element={<Faqs />} />
         <Route path="/services" element={<Services />} />
-        <Route path="/accordion" element={<Accordion />} />
       </Routes>
       <Footer />
     </BrowserRouter>

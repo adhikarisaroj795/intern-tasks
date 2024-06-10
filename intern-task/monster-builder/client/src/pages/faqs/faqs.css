@@ -1,0 +1,13 @@
+.faq-banner {
+  text-align: center;
+  position: relative;
+  min-height: 250px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("images/Medical.jpg");
+}
+
+.faq-area-faq {
+  flex: 0 0 70%;
+}

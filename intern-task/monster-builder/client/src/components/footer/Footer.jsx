@@ -60,7 +60,7 @@ const footer = () => {
                   </li>
                   <li>
                     <a href="">
-                      <span>Sheet Metal Fabrication</span>
+                      <span>3D Printing</span>
                     </a>
                   </li>
                   <li>
@@ -193,7 +193,7 @@ const footer = () => {
                       <span>Metal Fabrication Canberra</span>
                     </a>
                   </li>
-                  <li className="">
+                  <li className="m-t-35">
                     <a href="">
                       <span>Steel Fabrication Auckland</span>
                     </a>
@@ -208,7 +208,7 @@ const footer = () => {
                       <span>Aluminium Fabricators Auckland</span>
                     </a>
                   </li>
-                  <li className="m-t-35">
+                  <li className="">
                     <a href="">
                       <span>CNC Machining Auckland</span>
                     </a>
@@ -218,7 +218,7 @@ const footer = () => {
             </div>
             <div className="footer-services">
               <div className="footer-heading">
-                <p>Services</p>
+                <p>RECENT ARTICLES</p>
               </div>
               <div className="footer-last-col">
                 <div className="footer-l-cards m-t-20">

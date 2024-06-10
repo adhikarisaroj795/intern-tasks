@@ -1,6 +1,7 @@
 .accordion-card {
   width: 100%;
   max-width: 600px;
+
   border-style: solid;
   border-width: 1px 1px 1px 1px;
   border-color: #00102e47;
@@ -8,6 +9,7 @@
   margin: 15px 0;
   overflow: hidden;
 }
+/* max-width 800 */
 
 .accordion-heading {
   cursor: pointer;

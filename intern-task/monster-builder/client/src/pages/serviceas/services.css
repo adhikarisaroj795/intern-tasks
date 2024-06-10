@@ -1,0 +1,32 @@
+.service-banner {
+  text-align: center;
+  position: relative;
+  min-height: 250px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("images/school_lab.jpg");
+}
+
+.pd-btm-20 {
+  padding-bottom: 0px;
+}
+.mx-wd-800 {
+  max-width: 900px;
+}
+
+.mx-wd-800 p {
+  margin-top: 30px;
+  margin-bottom: 70px;
+}
+.mr-top-40 {
+  margin-top: 50px !important;
+  margin-bottom: 0 !important;
+}
+.pd-b-20 {
+  padding-bottom: 30px;
+}
+
+.rapid-proto p {
+  margin-bottom: 0;
+}
