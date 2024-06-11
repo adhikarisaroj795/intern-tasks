@@ -1,0 +1,106 @@
+.contact-banner {
+  text-align: center;
+  position: relative;
+  min-height: 250px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("images/aboutusImg.jpg");
+}
+
+.get-in-touch-area h1 {
+  color: #00102e;
+  font-family: var(--font-raleway);
+  font-size: 44px;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+.get-in-touch-area h1:after {
+  content: "";
+  height: 3px;
+  width: 70px;
+  display: block;
+  background-color: #3dba82;
+  margin-top: 10px;
+}
+
+.get-in-touch-area p {
+  color: #000000;
+  font-family: var(--font-manrope);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.7;
+  margin-bottom: 20px;
+}
+
+.contact-log-details p {
+  color: #000000;
+  font-family: var(--font-manrope);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 28px;
+}
+.contact-logo-solo {
+  display: flex;
+  gap: 10px;
+}
+.con-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  width: 40px;
+  background-color: red;
+  background-color: rgba(61, 186, 130, 0.3);
+  /* opacity: 0.5; */
+  border-radius: 50%;
+}
+.con-logo i {
+  font-size: 30px;
+  color: #3dba82;
+  z-index: 2;
+}
+
+.contact-log-details-pore p:first-child {
+  color: #3dba82;
+  font-family: "Roboto Slab", serif;
+  font-weight: 800;
+  line-height: 1.7;
+  font-size: 20px;
+}
+.contact-get-touch-sec {
+  background-color: #f2f3f5;
+  padding: 50px 0;
+}
+.contact-log-details-pore p:last-child {
+  color: #000000;
+  font-family: var(--font-manrope);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 28px;
+}
+
+.contact-w-logo {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.sp-btwn {
+  justify-content: space-between !important;
+}
+
+/* .contact-contact-form {
+  padding: 30px;
+} */
+.pd-up-down {
+  padding: 90px 0;
+}
+
+.get-a-quote-area {
+  /* border: 1px solid red; */
+  padding: 20px;
+  padding-bottom: 50px;
+  padding-left: 50px;
+  padding-right: 50px;
+  background-color: #ffffff;
+}

@@ -63,9 +63,9 @@ const Navbar = () => {
                 <Link to={"contact"}>Contact</Link>
               </li>
               <li>
-                <a href="" className="gbl-btn">
+                <Link to={"contact"} className="gbl-btn">
                   Get a Quote
-                </a>
+                </Link>
               </li>
             </ul>
           </nav>

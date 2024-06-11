@@ -1,7 +1,8 @@
 import React from "react";
 import "./faqs.css";
 import faqs from "./Faq";
-import Accordion from "../../components/Accordion/Accordion";
+import Accordion from "./Accordion/Accordion";
+import data from "./datas";
 
 const Faqs = () => {
   return (
@@ -15,9 +16,9 @@ const Faqs = () => {
         </div>
       </div>
       <section className="faq-get-quote">
-        <div className="container form-faq-quote">
-          <div className="faq-area ">
-            <h2>FAQ</h2>
+        <div className="container form-faq-faq">
+          <div className="faq-area-faq">
+            <h2>SERVICES</h2>
 
             <div className="mt-20">
               <div className="accordion-sec">
@@ -29,6 +30,48 @@ const Faqs = () => {
                   />
                 ))}
               </div>
+              <h2 className="m-t-50-b">PRICING</h2>
+
+              <div className="accordion-sec">
+                {data.map((d, index) => (
+                  <Accordion key={index} title={d.title} content={d.content} />
+                ))}
+              </div>
+            </div>
+          </div>
+          <div className="get-a-quote-area  faq-area-faq-30">
+            <div className="sticky-ad-area">
+              <div className="sticky-card-holder">
+                <div className="over-lay-faq"></div>
+                <div className="outline">
+                  <div className="sticky-card">
+                    <h2>TRANSFORMING CONCEPTS INTO REALITY</h2>
+                    <p>
+                      WhatsApp us at
+                      <span>
+                        <strong>
+                          <u>+65 8774 3624</u>
+                        </strong>
+                      </span>
+                      , or email us at
+                      <span>
+                        <strong>contact@monsterbuilder.ai</strong>
+                      </span>
+                    </p>
+                    <span className="gbl-btn m-t-10">Get a Quote</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="faq-get-quote m-t-50">
+        <div className="container form-faq-quote">
+          <div className="faq-area">
+            <div className="faq-water-img">
+              <img src="images/faq-water-fall.jpg" alt="" />
             </div>
           </div>
           <div className="get-a-quote-area faq-area">
@@ -97,7 +140,7 @@ const Faqs = () => {
               <div className="text-area first-input">
                 <label className="svg-icon">
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                    <path d="m51.7 295.1 31.7 6.3c7.9 1.6 16-.9 21.7-6.6l15.4-15.4c11.6-11.6 31.1-8.4 38.4 6.2l9.3 18.5c4.8 9.6 14.6 15.7 25.4 15.7 15.2 0 26.1-14.6 21.7-29.2l-6-19.9c-4.6-15.4 6.9-30.9 23-30.9h2.3c13.4 0 25.9-6.7 33.3-17.8l10.7-16.1c5.6-8.5 5.3-19.6-.8-27.7l-16.1-21.5c-10.3-13.7-3.3-33.5 13.4-37.7l17-4.3c7.5-1.9 13.6-7.2 16.5-14.4L325 59.4C303.4 52.1 280.2 48 256 48 141.1 48 48 141.1 48 256c0 13.4 1.3 26.5 3.7 39.1zm407.7 4.6c-3-.3-6-.1-9 .8l-15.8 4.4c-6.7 1.9-13.8-.9-17.5-6.7l-2-3.1c-6-9.4-16.4-15.1-27.6-15.1s-21.6 5.7-27.6 15.1l-6.1 9.5c-1.4 2.2-3.4 4.1-5.7 5.3L312 330.1c-18.1 10.1-25.5 32.4-17 51.3l5.5 12.4c8.6 19.2 30.7 28.5 50.5 21.1l2.6-1c10-3.7 21.3-2.2 29.9 4.1l1.5 1.1c37.2-29.5 64.1-71.4 74.4-119.5zM0 256a256 256 0 1 1 512 0 256 256 0 1 1-512 0zm144.5 92.1c-2.1 8.6 3.1 17.3 11.6 19.4l32 8c8.6 2.1 17.3-3.1 19.4-11.6s-3.1-17.3-11.6-19.4l-32-8c-8.6-2.1-17.3 3.1-19.4 11.6zm92-20c-2.1 8.6 3.1 17.3 11.6 19.4s17.3-3.1 19.4-11.6l8-32c2.1-8.6-3.1-17.3-11.6-19.4s-17.3 3.1-19.4 11.6l-8 32zm106.7-214.4c-7.9-4-17.5-.7-21.5 7.2l-16 32c-4 7.9-.7 17.5 7.2 21.5s17.5.7 21.5-7.2l16-32c4-7.9.7-17.5-7.2-21.5z" />
+                    <path d="M64 0C28.7 0 0 28.7 0 64v288c0 35.3 28.7 64 64 64h96v80c0 6.1 3.4 11.6 8.8 14.3s11.9 2.1 16.8-1.5L309.3 416H448c35.3 0 64-28.7 64-64V64c0-35.3-28.7-64-64-64H64z" />
                   </svg>
                 </label>
                 <textarea
@@ -109,6 +152,24 @@ const Faqs = () => {
                 <span className="form-btn">Send</span>
               </div>
             </form>
+          </div>
+        </div>
+      </section>
+
+      <section className="our-partner">
+        <div className="container">
+          <div className="our-partner-wrapper">
+            <span>Our Partner</span>
+
+            <div className="our-partner-details">
+              <div className="our-partner-img">
+                <img src="images/supertomato.png" alt="" />
+              </div>
+              <p>
+                Pioneering Automation and Robotics solutions for diverse
+                industries, enhancing efficiency, productivity, and innovation
+              </p>
+            </div>
           </div>
         </div>
       </section>

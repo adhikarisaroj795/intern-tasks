@@ -1,0 +1,79 @@
+<html>
+    <head>
+        <style>
+            .gradient_reverse_sec {
+    background-position: top left;}
+    .gradient_sec {
+    padding-block: 127px 72px;
+    text-align: center;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 50px;
+    background-repeat: no-repeat;
+    background-size: 50% auto;
+}
+.green_gradient {
+    color: var(--white);
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-inline: -20px;
+}
+.col-7 {
+    flex: 0 0 auto;
+    width: 58.33333333%;
+}
+.col-5 {
+    flex: 0 0 auto;
+    width: 41.66666667%;
+}
+.green_gradient:after {
+    background-image: linear-gradient(90deg, rgba(124, 185, 40, 0.1) 0%, #7CB928 43%);
+}
+.banner_each_slider .banner_each_slider_wrap:after, .numbers_sec:after, .gradient_sec:after, .footer:after, .grad_sec:after {
+    content: '';
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    background-image: linear-gradient(90deg, rgba(232, 77, 14, 0.9) 7.45%, rgba(232, 77, 14, 0.709368) 63.5%, rgba(232, 77, 14, 0.3) 105.39%);
+}
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+.blue_gradient, .green_gradient {
+    color: var(--white);
+}
+.gradient_sec {
+    padding-block: 127px 72px;
+    text-align: center;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 50px;
+    background-repeat: no-repeat;
+    background-size: 50% auto;
+    background-position: top right;}
+        </style>
+    </head>
+    <body>
+        <div class="gradient_sec gradient_reverse_sec green_gradient front_sec" style="background-image: url('/HEALA/assets/green.png');">
+            <div class="container">
+                <div class="row row-reverse">
+                    <div class="col-7">
+                        <h2>Chew on This</h2>
+                        <div class="gradient_dec">South Africa suffers from high levels of hunger, food insecurity, and obesity — all of which are consequences of the country’s broken food system.
+                        </div>
+                        <a class="btn blue_btn" href="https://wprevamp.com/wp/directory7/Heala-food/chew/" target="_self">Find out more</a>
+                    </div>
+                    <div class="col-5">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

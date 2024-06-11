@@ -1,0 +1,62 @@
+.accordion-card-faq {
+  width: 100%;
+  max-width: 828px;
+
+  border-style: solid;
+  border-width: 1px 1px 1px 1px;
+  border-color: #00102e47;
+  border-radius: 10px;
+  margin: 15px 0;
+  overflow: hidden;
+}
+/* max-width 800 */
+
+.accordion-heading {
+  cursor: pointer;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  border-radius: 10px;
+}
+
+.accordion-heading span {
+  font-family: var(--font-manrope);
+  font-size: 17px;
+  font-weight: 600;
+  color: #00102e;
+}
+
+.arrow {
+  font-size: 18px;
+  transition: transform 0.3s ease;
+}
+.accord-heading-title.open {
+  color: #3dba82; /* Change this to the color you want when open */
+}
+
+.arrow.open {
+  transform: rotate(180deg);
+  color: #3dba82;
+}
+
+.accordion-contents-wrapper {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+}
+
+.accordion-contents {
+  padding: 0 15px 15px;
+}
+
+.accordion-contents p {
+  font-size: 15px;
+  font-family: var(--font-manrope);
+  font-weight: 500;
+  line-height: 1.7;
+  &strong {
+    font-weight: 700;
+  }
+}
