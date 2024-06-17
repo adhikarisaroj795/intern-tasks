@@ -1,8 +1,13 @@
-import React from "react";
 import { Link } from "react-router-dom";
 import "./Navbar.css";
+import { useState } from "react";
 
 const Navbar = () => {
+  const [isOpen, setIsOpen] = useState(false);
+  const toggleMenu = () => {
+    setIsOpen(!isOpen);
+  };
+  console.log(isOpen);
   return (
     <>
       <div className="header-wrapper">
@@ -10,8 +15,8 @@ const Navbar = () => {
           <div className="nav-logo">
             <img src="images/monster-logo.png" alt="" />
           </div>
-          <nav>
-            <ul>
+          <nav className={isOpen ? "nav-open" : ""}>
+            <ul className={isOpen ? "nav-menu-open" : ""}>
               <li>
                 <Link to="/">Home</Link>
               </li>
@@ -68,6 +73,12 @@ const Navbar = () => {
                 </Link>
               </li>
             </ul>
+
+            <div className="menu-toggle" id="mobile-menu" onClick={toggleMenu}>
+              <span className="bar"></span>
+              <span className="bar"></span>
+              <span className="bar"></span>
+            </div>
           </nav>
         </header>
       </div>

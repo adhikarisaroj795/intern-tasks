@@ -123,6 +123,7 @@
 
 .star-slider {
   max-width: calc(100% - 245px);
+
   /* background-color: red; */
 }
 .star-slider:hover {
@@ -131,7 +132,6 @@
 .slider-main {
   display: flex;
   align-items: center;
-  margin: 20px 0;
 }
 
 /* index.css */
@@ -144,4 +144,8 @@
 .hover-slide:hover {
   transform: translateY(-7px);
   transition: transform 0.5s ease;
+}
+
+.slick-slide > div {
+  padding: 20px 0;
 }

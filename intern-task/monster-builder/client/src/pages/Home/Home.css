@@ -130,8 +130,9 @@
 .fab-prot-img {
   width: 100px;
   position: absolute;
+  height: 100px;
 
-  top: -34px;
+  top: -50px;
   left: 31px;
   transition: transform 0.8s;
 }
@@ -141,7 +142,7 @@
 .fab-prot-img img {
   height: 100%;
   width: 100%;
-  object-fit: cover;
+  object-fit: contain;
 }
 .fab-prot-card p a:nth-child(1) {
   font-size: 22px;
@@ -462,7 +463,7 @@
 }
 
 .adv-img img {
-  transition: transform 0.5s ease-in-out;
+  transition: transform 0.3s ease-in-out;
 }
 .solo-adv-img-wrapper:hover .adv-img img {
   transform: scale(1.1);
@@ -729,3 +730,37 @@ input {
   font-family: "Roboto", sans-serif;
   display: block;
 }
+
+.circle-svg svg {
+  fill: transparent;
+  stroke: #50ae5d;
+  stroke-width: 9;
+
+  width: 350px;
+}
+
+.eit-cal {
+  position: relative;
+}
+.circle-svg {
+  position: absolute;
+  inset: 0;
+  top: -17px;
+  left: -9px;
+  width: 350px;
+}
+/* .circle-svg path {
+  stroke: #61ce70;
+  stroke-width: 9;
+  fill: transparent;
+  stroke-dasharray: 100%;
+  animation: pathAnimation 1s linear forwards;
+}
+@keyframes pathAnimation {
+  0% {
+    stroke-dashoffset: 100%;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+} */

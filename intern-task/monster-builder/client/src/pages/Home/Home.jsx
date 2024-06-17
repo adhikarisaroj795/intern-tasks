@@ -1,10 +1,21 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./Home.css";
 import StarGoogle from "../../components/star-excellent/StarGoogle";
 import Accordion from "../../components/Accordion/Accordion";
 import faqs from "./Faq";
+import { motion } from "framer-motion";
 
 const Home = () => {
+  const [progress, setProgress] = useState(0);
+  const animationDuration = 0.5; // Duration of the animation in seconds
+
+  useEffect(() => {
+    const intervalId = setInterval(() => {
+      setProgress((prevProgress) => (prevProgress + 1) % 2); // Toggle between 0 and 1
+    }, 3000); // Reset every 10 seconds
+
+    return () => clearInterval(intervalId);
+  }, []);
   return (
     <>
       <div className="hero-banner-img">
@@ -36,7 +47,7 @@ const Home = () => {
 
       <StarGoogle />
 
-      <section className="mt-10 who-monster-section">
+      <section className=" who-monster-section">
         <div className="container">
           <div className="who-ismonster flex">
             <div className="monster-img">
@@ -191,7 +202,34 @@ const Home = () => {
               and services as well as innovative solutions in 3D printing, CNC
               machining, and sheet metal fabrication.
             </p>
-            <p className="calender-fab">8 calendar days for fabrication</p>
+            <p className="calender-fab">
+              <span className="eit-cal">
+                <span className="">8 calendar days </span>
+                <span className="circle-svg">
+                  <motion.svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 500 150"
+                    preserveAspectRatio="none"
+                    style={{
+                      stroke: "#61ce70",
+                      strokeWidth: "9",
+                      fill: "transparent",
+                    }}
+                  >
+                    <motion.path
+                      d="M325,18C228.7-8.3,118.5,8.3,78,21C22.4,38.4,4.6,54.6,5.6,77.6c1.4,32.4,52.2,54,142.6,63.7 c66.2,7.1,212.2,7.5,273.5-8.3c64.4-16.6,104.3-57.6,33.8-98.2C386.7-4.9,179.4-1.4,126.3,20.7"
+                      initial={{ pathLength: 0 }}
+                      animate={{ pathLength: progress }}
+                      transition={{
+                        duration: animationDuration,
+                        ease: "easeInOut",
+                      }}
+                    />
+                  </motion.svg>
+                </span>
+              </span>
+              for fabrication
+            </p>
           </div>
 
           <div className="three-col-choose">

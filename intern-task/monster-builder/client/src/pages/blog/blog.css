@@ -112,3 +112,7 @@
 .m-t-100 {
   margin-top: 130px;
 }
+
+.blog-pagi span {
+  cursor: pointer;
+}
