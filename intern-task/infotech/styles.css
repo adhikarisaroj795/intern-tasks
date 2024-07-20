@@ -1,0 +1,138 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: BaiJamjuree;
+  src: url("./assets/fonts/BaiJamjuree.ttf") format("ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+body {
+  font-family: "BaiJamjuree", sans-serif;
+}
+
+a,
+ul,
+li,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+span,
+div,
+body,
+input,
+textarea,
+figure {
+  padding: 0;
+  list-style-type: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  line-height: 1.5;
+}
+
+.container {
+  max-width: 1400px;
+  padding-left: 17px;
+  padding-right: 17px;
+  margin: 0 auto;
+}
+
+.flex {
+  display: flex;
+}
+img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+section {
+  margin: 80px 0;
+}
+.banner-holder {
+  justify-content: space-between;
+  border-radius: 5px;
+}
+
+.banner-1 figure {
+  width: 926.6px;
+  height: 432.56;
+  border-radius: 5px;
+}
+.banner-2 {
+  height: 433.4px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 5px;
+}
+.banner-2 figure img,
+.banner-1 figure img {
+  border-radius: 5px;
+}
+.banner-2 figure {
+  width: 435px;
+  height: 214.09px;
+  border-radius: 5px;
+}
+.slides-holder {
+  display: flex;
+  justify-content: space-around;
+}
+
+.slides-holder .solo-slide a figure {
+  margin: 0 auto 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  height: 100px;
+  width: 100px;
+  position: relative;
+  background: #f1f5f6;
+  border-radius: 50%;
+  transition: all 0.2s ease-in-out;
+}
+
+.slides-holder .solo-slide a figure::before {
+  content: "";
+  position: absolute;
+  top: 15%;
+  left: 13%;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  box-shadow: inset 0 0 0 6px white;
+  pointer-events: none;
+  border: 2px solid #3644ad;
+  transition: all 0.15s ease-in-out;
+  overflow: hidden;
+  visibility: hidden;
+}
+
+.slides-holder .solo-slide a figure:hover::before {
+  width: 95%;
+  height: 95%;
+  top: 0;
+  right: 0;
+  left: 0;
+  border-radius: 50%;
+  visibility: visible;
+  overflow: hidden;
+  z-index: 10;
+}
+
+.slides-holder .solo-slide a p {
+  text-align: center;
+  font-weight: 600;
+  line-height: 1.7;
+  font-size: 14px;
+  color: #212529;
+}
