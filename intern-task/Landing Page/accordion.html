@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accordion Layout</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+        body {
+            font-family: "Inter", sans-serif;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        span,
+        button,
+        input {
+            font-family: "Inter", sans-serif;
+        }
+
+
+        .main {
+            display: flex;
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            background-color: white;
+            /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+        }
+
+        .side-bar {
+            flex: 0 0 30%;
+            /* background-color: #eee; */
+            padding: 20px;
+            box-sizing: border-box;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .accordion-container {
+            flex: 0 0 70%;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .accordion {
+            width: 100%;
+        }
+
+        .accordion-item {
+            border-bottom: 1px solid #ddd;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+
+        .accordion-item:last-child {
+            border-bottom: none;
+        }
+
+        .accordion-header {
+            width: 100%;
+            padding: 10px 20px 34px 20px;
+            background: #fff;
+            border: none;
+            text-align: left;
+            font-size: 16px;
+            cursor: pointer;
+            position: relative;
+            color: #333;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            line-height: 132%;
+        }
+
+        .icon-box {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 24px;
+            height: 24px;
+            background-color: #FDE9E2;
+            border-radius: 12px;
+            padding: 20px;
+            transition: background-color 0.3s ease;
+        }
+
+        .accordion-header .icon {
+            font-size: 20px;
+            color: red;
+            transition: color 0.3s ease;
+        }
+
+        .accordion-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease-out;
+            background: #fff;
+            padding: 0 20px;
+            letter-spacing: 0.2px;
+            line-height: 148%;
+            font-size: 16px;
+        }
+
+        .accordion-content p {
+            padding: 15px 0;
+            margin: 0;
+        }
+
+        hr {
+            margin: 0;
+            border: 0;
+            border-top: 1px solid #ddd;
+        }
+    </style>
+    <div class="main">
+        <div class="side-bar">
+            <p>Side Bar Content (30%)</p>
+        </div>
+        <div class="accordion-container">
+            <div class="accordion">
+                <div class="accordion-item">
+                    <button class="accordion-header">What is the PMP certification? <span class="icon-box"><span
+                                class="icon">+</span></span></button>
+                    <hr>
+                    <div class="accordion-content">
+                        <p>The PMP (Project Management Professional) certification is a globally recognized credential
+                            offered by the Project Management Institute (PMI). It validates a professional's ability to
+                            manage projects and teams, demonstrating expertise in project management methodologies and
+                            best practices.</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <button class="accordion-header">What are the benefits of PMP certification? <span
+                            class="icon-box"><span class="icon">+</span></span></button>
+                    <hr>
+                    <div class="accordion-content">
+                        <p>The benefits of PMP certification include:</p>
+                        <ul>
+                            <li>Career Advancement: Increased job opportunities and higher earning potential.</li>
+                            <li>Industry Recognition: Validates expertise in project management.</li>
+                            <li>Networking Opportunities: Access to a global community of professionals</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <button class="accordion-header">What are the benefits of PMP certification?<span
+                            class="icon-box"><span class="icon">+</span></span></button>
+                    <hr>
+                    <div class="accordion-content">
+                        <p>This is the content for section 3.</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <button class="accordion-header">Are the courses self-paced or do they have specific start and end
+                        dates?<span class="icon-box"><span class="icon">+</span></span></button>
+                    <hr>
+                    <div class="accordion-content">
+                        <p>This is the content for section 4.</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <button class="accordion-header">Are there any prerequisites for the courses?<span
+                            class="icon-box"><span class="icon">+</span></span></button>
+                    <hr>
+                    <div class="accordion-content">
+                        <p>This is the content for section 5.</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <button class="accordion-header">Can I download the course materials for offline access?<span
+                            class="icon-box"><span class="icon">+</span></span></button>
+                    <hr>
+                    <div class="accordion-content">
+                        <p>This is the content for section 6.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        // script.js
+        document.addEventListener('DOMContentLoaded', function () {
+            const accordionHeaders = document.querySelectorAll('.accordion-header');
+            accordionHeaders.forEach(header => {
+                header.addEventListener('click', function () {
+                    const accordionContent = this.nextElementSibling.nextElementSibling;
+                    const icon = this.querySelector('.icon');
+                    const iconBox = this.querySelector('.icon-box');
+                    // Toggle the active class
+                    this.classList.toggle('active');
+                    // Toggle the max height and icon
+                    if (this.classList.contains('active')) {
+                        accordionContent.style.maxHeight = accordionContent.scrollHeight + 'px';
+                        icon.textContent = '-';
+                        iconBox.style.backgroundColor = '#FDE9E2';
+                    } else {
+                        accordionContent.style.maxHeight = 0;
+                        icon.textContent = '+';
+                        iconBox.style.backgroundColor = '#FDE9E2';
+                    }
+                    // Close other accordion items
+                    accordionHeaders.forEach(otherHeader => {
+                        if (otherHeader !== this && otherHeader.classList.contains('active')) {
+                            otherHeader.classList.remove('active');
+                            otherHeader.nextElementSibling.nextElementSibling.style.maxHeight = 0;
+                            otherHeader.querySelector('.icon').textContent = '+';
+                            otherHeader.querySelector('.icon-box').style.backgroundColor = '#ffdddd';
+                        }
+                    });
+                });
+            });
+        });
+
+    </script>
+</body>
+
+</html>

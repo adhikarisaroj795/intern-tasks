@@ -1,0 +1,63 @@
+.container {
+  max-width: 1220px;
+  margin: 0 auto;
+}
+.flow-session-banner {
+  /* background-color: red; */
+
+  text-align: start;
+  display: flex;
+  justify-content: center;
+  max-width: 1100px;
+  margin: 0 auto;
+  margin-top: 80px;
+}
+.flow-session-solo-card {
+  padding: 24px;
+  border: 1px solid red;
+  position: relative;
+}
+.flow-session-solo-card.card-one::after {
+  content: "1";
+  display: block;
+  height: 40px;
+  width: 40px;
+  color: #ffffff;
+  background: red;
+  position: absolute;
+}
+.flow-session-solo-card h2 {
+  margin: 0;
+  padding: 0;
+}
+.bg-img {
+  flex: 1;
+  margin-inline: 50px;
+  margin-top: 20px;
+}
+.bg-img img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.flow-session-area {
+  text-align: center;
+}
+.flow-first {
+  flex: 0 0 30%;
+}
+.flow-sec {
+  flex: 0 0 30%;
+}
+
+.flow-session-solo-card h2 {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 16px;
+  color: #1f1f1f;
+}
+
+.flow-session-solo-card ul {
+  margin-top: 16px;
+  padding-inline-start: 25px;
+}

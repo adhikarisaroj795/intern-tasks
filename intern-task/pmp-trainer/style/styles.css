@@ -121,10 +121,10 @@ img {
 }
 
 .banner-details {
-  flex: 0 0 75%;
+  flex: 0 0 73%;
 }
 .banner-count-down {
-  flex: 0 0 25%;
+  flex: 0 0 27%;
 }
 .banner-img figure:first-of-type {
   overflow: hidden;
@@ -283,16 +283,317 @@ img {
 
   /* border: 1px red solid; */
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+  text-align: center;
 }
 
 .countdown .col div input {
-  height: 50px;
-  width: 60%;
+  height: 64px;
+  width: 64px;
   border-radius: 5px;
   border-color: transparent;
   background-color: #f26334;
   text-align: center;
   font-size: 20px;
   cursor: pointer;
+}
+.countdown .col div label {
+  font-size: 12px;
+  line-height: 12px;
+  color: #b8b8b8;
+  text-align: center;
+}
+
+.registration-form h2 {
+  margin-top: 20px;
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: bold;
+  color: #ffffff;
+  margin-bottom: 16px;
+}
+.registration-form h2 span {
+  color: red;
+}
+
+.registration-form form {
+  display: flex;
+  flex-direction: column;
+}
+.registration-form form input {
+  margin-bottom: 8px;
+  padding: 18px 0;
+  padding-left: 18px;
+  border-radius: 12px;
+}
+.registration-form form input:last-of-type {
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 16px;
+  color: #ffffff;
+  background: #f26334;
+}
+.registration-form form span {
+  margin-top: 8px;
+  font-size: 12px;
+  line-height: 12px;
+  color: #b8b8b8;
+  text-align: center;
+}
+
+/* curve  */
+
+.flow-session-banner {
+  /* background-color: red; */
+
+  text-align: start;
+  display: flex;
+  justify-content: center;
+  max-width: 1100px;
+  margin: 0 auto;
+  margin-top: 80px;
+}
+.flow-session-solo-card {
+  position: relative;
+
+  padding: 24px;
+  max-width: 378px;
+  border-radius: 16px;
+  box-shadow: 0px 4px 25px 0px rgba(0, 0, 0, 0.05);
+}
+.flow-session-solo-card h2 {
+  margin: 0;
+  padding: 0;
+}
+
+.bg-img img {
+  width: 159.63px;
+
+  height: 1030.5px;
+  object-fit: cover;
+}
+.flow-session-area {
+  text-align: center;
+}
+.flow-first {
+  flex: 0 0 40%;
+}
+.flow-sec {
+  flex: 0 0 40%;
+}
+.bg-img {
+  flex: 0 0 20%;
+  margin-inline: 50px;
+  margin-top: 80px;
+  width: 159.63px;
+  height: 1030.5px;
+}
+
+.flow-session-solo-card h2 {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 16px;
+  color: #1f1f1f;
+}
+
+.flow-session-solo-card ul {
+  margin-top: 16px;
+  padding-inline-start: 25px;
+}
+
+.flow-session-solo-card li {
+  font-size: 16px;
+  line-height: 148%;
+  color: #5c5c5c;
+}
+
+.card-one {
+  margin-bottom: 125px;
+}
+.card-five {
+  position: relative;
+  margin-top: 98px;
+}
+.flow-session-solo-card.card-five::after {
+  content: "5";
+  display: block;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  color: #ffffff;
+  background: #f26334;
+  font-size: 16px;
+  display: flex;
+  left: 472px;
+  bottom: 80px;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+}
+.card-seven {
+  position: relative;
+  margin-top: 106px;
+}
+
+.flow-session-solo-card.card-seven::after {
+  content: "7";
+  display: block;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  color: #ffffff;
+  background: #f26334;
+  font-size: 16px;
+  display: flex;
+  left: 477px;
+  bottom: 80px;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+}
+.flow-session-solo-card.card-one::after {
+  content: "1";
+  display: block;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  color: #ffffff;
+  background: #f26334;
+  font-size: 16px;
+  display: flex;
+  left: 482px;
+  bottom: 80px;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+}
+.card-two {
+  position: relative;
+  margin-top: 124px;
+}
+.card-three {
+  position: relative;
+}
+.flow-session-solo-card.card-two::after {
+  content: "2";
+  display: block;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  color: #ffffff;
+  background: #f26334;
+  font-size: 16px;
+  display: flex;
+  left: -143px;
+  bottom: 80px;
+
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+}
+.card-four {
+  position: relative;
+  margin-top: 78px;
+}
+.card-six {
+  position: relative;
+  margin-top: 115px;
+}
+.card-eight {
+  margin-top: 99px;
+  position: relative;
+}
+.flow-session-solo-card.card-eight::after {
+  content: "8";
+  display: block;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  color: #ffffff;
+  background: #f26334;
+  font-size: 16px;
+  display: flex;
+  left: -133px;
+  bottom: 80px;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+}
+.flow-session-solo-card.card-six::after {
+  content: "6";
+  display: block;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  color: #ffffff;
+  background: #f26334;
+  font-size: 16px;
+  display: flex;
+  left: -138px;
+  bottom: 87px;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+}
+.flow-session-solo-card.card-four::after {
+  content: "4";
+  display: block;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  color: #ffffff;
+  background: #f26334;
+  font-size: 16px;
+  display: flex;
+  left: -136px;
+  bottom: 80px;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+}
+.flow-session-solo-card.card-two::after {
+  content: "2";
+  display: block;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  color: #ffffff;
+  background: #f26334;
+  font-size: 16px;
+  display: flex;
+  left: -143px;
+  bottom: 80px;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+}
+
+.flow-session-solo-card.card-three::after {
+  content: "3";
+  display: block;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  color: #ffffff;
+  background: #f26334;
+  font-size: 16px;
+  display: flex;
+  left: 477px;
+  bottom: 80px;
+
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+}
+
+.dont-miss {
+  position: absolute;
+
+  left: -50px;
+  bottom: 183px;
+}
+.dont-miss img {
+  width: 100px;
+  height: 93.9px;
+  object-fit: cover;
 }

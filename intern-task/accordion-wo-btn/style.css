@@ -1,0 +1,77 @@
+/* Universal reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+.accordion {
+  width: 80%;
+  margin: 20px auto;
+
+  border-radius: 5px;
+}
+
+.accordion-item {
+  border: 1px solid #00102e47;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+/* .accordion-item:last-child {
+    border-bottom: none;
+  } */
+
+.accordion-header {
+  padding: 15px;
+  cursor: pointer;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.accordion-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out, padding 0.3s ease-out;
+
+  background-color: #fff;
+}
+.accordion-content p {
+  padding: 20px;
+}
+
+.arrow {
+  transition: transform 0.3s ease;
+}
+
+.arrow.rotate {
+  transform: rotate(180deg);
+  color: #3dba82;
+}
+
+.acc-header {
+  transition: transform 0.3s ease;
+  font-family: "Manrope", sans-serif;
+  font-size: 17px;
+  font-weight: 600;
+  color: #00102e;
+  line-height: 1;
+}
+.acc-header.headerColor {
+  color: #3dba82;
+}
+
+.accordion-content p {
+  color: #000000;
+  font-family: "Manrope", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.7;
+  text-align: justify;
+}

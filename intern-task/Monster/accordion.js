@@ -34,7 +34,7 @@ document.addEventListener("DOMContentLoaded", function () {
         content.style.maxHeight = null;
       } else {
         content.classList.add("show");
-        content.style.maxHeight = content.scrollHeight + "px";
+        content.style.maxHeight = content.documen + "px";
       }
 
       arrow.classList.toggle("rotate");
