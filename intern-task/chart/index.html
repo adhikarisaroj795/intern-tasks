@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Progress Chart</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <div
+      class="circular-progress"
+      data-inner-circle-color="lightgrey"
+      data-percentage="80"
+      data-progress-color="crimson"
+      data-bg-color="black"
+    >
+      <div class="inner-circle"></div>
+      <p class="percentage">0%</p>
+    </div>
+
+    <!-- Include Chart.js library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.1/chart.min.js"></script>
+
+    <script src="app.js"></script>
+  </body>
+</html>

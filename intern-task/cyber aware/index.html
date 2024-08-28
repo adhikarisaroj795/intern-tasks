@@ -5,116 +5,331 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cyber Aware</title>
     <link rel="stylesheet" href="styles/styles.css" />
+
+    <!-- Latest compiled and minified Chart.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.1/chart.min.js"></script>
+
+    <script src="scripts/chart.js" defer></script>
   </head>
   <body>
-    <section class="header-sec">
-      <div class="container">
-        <header class="flex-spc-btwn">
-          <div class="header-logo">
-            <a href="">
-              <img src="assets/images/cyber aware.png" alt="" />
-            </a>
+    <div class="page-wrapper">
+      <section class="header-sec">
+        <div class="container">
+          <div class="header-holder">
+            <header class="flex-spc-btwn">
+              <div class="header-logo">
+                <a href="">
+                  <img src="assets/images/cyber aware.png" alt="" />
+                </a>
+              </div>
+              <nav>
+                <ul class="flex">
+                  <li>
+                    <a href="#">Business toolkit</a>
+                  </li>
+                  <li>
+                    <a href="#">Awareness posters</a>
+                  </li>
+                  <li>
+                    <a href="#">Awareness training</a>
+                  </li>
+                  <li>
+                    <a href="#">Phishing simulations</a>
+                  </li>
+                </ul>
+              </nav>
+              <div class="header-profile-holder">
+                <div class="header-profile">
+                  <span>JH</span>
+                </div>
+              </div>
+              <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+              </div>
+            </header>
           </div>
-          <nav>
-            <ul class="flex">
-              <li>
-                <a href="#">Business toolkit</a>
-              </li>
-              <li>
-                <a href="#">Awareness posters</a>
-              </li>
-              <li>
-                <a href="#">Awareness training</a>
-              </li>
-              <li>
-                <a href="#">Phishing simulations</a>
-              </li>
-            </ul>
-          </nav>
-          <div class="header-profile-holder">
-            <div class="header-profile">
-              <span>JH</span>
-            </div>
-          </div>
-        </header>
-      </div>
-    </section>
+        </div>
+      </section>
 
-    <section class="banner-sec">
-      <div class="container flex">
-        <div class="banner-left">
-          <h2>
-            Hi Jonathan, welcome to your <span>Cyber</span>
-            <span>Awareness Training</span>
-          </h2>
-          <span class="banner-small"
-            >Please review the settings for your security awarenesss training
-            below.</span
-          >
+      <section class="banner-sec">
+        <div class="container flex">
+          <div class="banner-left">
+            <h2>
+              Hi Jonathan, welcome to your <span>Cyber</span>
+              <span>Awareness Training</span>
+            </h2>
+            <span class="banner-small"
+              >Please review the settings for your security awarenesss training
+              below.</span
+            >
+          </div>
+          <div class="banner-right">
+            <figure>
+              <img src="assets/images/Dude.png" alt="" />
+            </figure>
+          </div>
         </div>
-        <div class="banner-right">
-          <figure>
-            <img src="assets/images/Dude.png" alt="" />
-          </figure>
-        </div>
-      </div>
-    </section>
-    <section class="main-content">
-      <div class="container flex">
-        <div class="main-content-left">
-          <aside>
-            <ul>
-              <li>
+      </section>
+      <section class="main-content">
+        <div class="container flex">
+          <div class="main-content-left">
+            <aside>
+              <ul>
+                <li>
+                  <figure>
+                    <img src="assets/images/Bulletin News.png" alt="" />
+                  </figure>
+                  <a href="#">Training courses</a>
+                </li>
+                <li>
+                  <figure>
+                    <img src="assets/images/Group 161.png" alt="" />
+                  </figure>
+                  <a href="#">Manage learners</a>
+                </li>
+                <li>
+                  <figure>
+                    <img src="assets/images/Calendar (1).png" alt="" />
+                  </figure>
+                  <a href="#">Training schedule</a>
+                </li>
+                <li>
+                  <figure>
+                    <img src="assets/images/Group 114.png" alt="" />
+                  </figure>
+                  <a href="#">Add to schedule</a>
+                </li>
+                <li>
+                  <figure>
+                    <img src="assets/images/Dashboard.png" alt="" />
+                  </figure>
+                  <a href="#">Training dashboards</a>
+                </li>
+              </ul>
+            </aside>
+          </div>
+          <div class="main-content-right">
+            <div class="training-group-wrapper flex-spc-btwn">
+              <div class="training-group-left flex">
                 <figure>
-                  <img src="assets/images/Bulletin News.png" alt="" />
+                  <img src="assets/images/Profile Account User.png" alt="" />
                 </figure>
-                <a href="#">Training courses</a>
-              </li>
-              <li>
-                <figure>
-                  <img src="assets/images/Group 161.png" alt="" />
-                </figure>
-                <a href="#">Manage learners</a>
-              </li>
-              <li>
-                <figure>
-                  <img src="assets/images/Calendar (1).png" alt="" />
-                </figure>
-                <a href="#">Training schedule</a>
-              </li>
-              <li>
-                <figure>
-                  <img src="assets/images/Group 114.png" alt="" />
-                </figure>
-                <a href="#">Add to schedule</a>
-              </li>
-              <li>
-                <figure>
-                  <img src="assets/images/Dashboard.png" alt="" />
-                </figure>
-                <a href="#">Training dashboards</a>
-              </li>
-            </ul>
-          </aside>
-        </div>
-        <div class="main-content-right">
-          <div class="training-group-wrapper flex-spc-btwn">
-            <div class="training-group-left flex">
-              <figure>
-                <img src="assets/images/Profile Account User.png" alt="" />
-              </figure>
-              <h2>Select Training Group</h2>
+                <h2>Select Training Group</h2>
+              </div>
+              <div class="training-group-right">
+                <a href="">
+                  <img src="assets/images/Push.png" alt="" />Push schedule to
+                  all users</a
+                >
+                <a href="">
+                  <img src="assets/images/Primary v2.png" alt="" />
+                  Add to schedule
+                </a>
+              </div>
             </div>
-            <div class="training-group-right">
-              <a href="">
-                <img src="assets/images/Open side Arrow.png" alt="" />Push
-                schedule to all users</a
-              >
-              <a href="">Add to schedule</a>
+            <div class="chart-holder">
+              <div class="chart-container">
+                <canvas id="progressChart"></canvas>
+              </div>
+            </div>
+
+            <div class="ransomware-holder flex">
+              <div class="ransoware-left flex-col">
+                <span>Scheduled</span>
+                <div class="on-div">
+                  <span>ON</span>
+                </div>
+                <span class="signup">Sign up</span>
+              </div>
+              <div class="ransoware-right">
+                <div class="ransoware-right-col1 flex-spc-btwn">
+                  <div class="ransomware-logo">
+                    <img src="assets/images/Bulletin News1.png" alt="" />
+                    <span>Ransomware</span>
+                  </div>
+                  <div class="ransomware-btn flex">
+                    <div class="training-group-right flex ransw-btn-gap">
+                      <a href="">
+                        <img src="assets/images/Eye Preview.png" alt="" />
+                        Preview
+                      </a>
+                      <img src="assets/images/Actions.png" alt="" />
+                    </div>
+                  </div>
+                </div>
+
+                <div class="ransoware-right-col2 flex">
+                  <div class="ransoware-right-col2-left">
+                    <p>
+                      <strong>Description:</strong> This lesson is inspired by
+                      the Hollywood Presbyterian Medical Center attack and
+                      teaches about Randomware.
+                    </p>
+                    <p><strong>Difficulty:</strong> Easy</p>
+                  </div>
+                  <div class="ransoware-right-col2-right flex">
+                    <div class="circle-holder">
+                      <div class="ransoware-circle fst-crcle">
+                        <span>836</span>
+                      </div>
+                      <span>Enrolled</span>
+                    </div>
+                    <div class="circle-holder">
+                      <div class="ransoware-circle sec-circle">
+                        <span>836</span>
+                      </div>
+                      <span>Completed</span>
+                    </div>
+                    <div class="circle-holder">
+                      <div
+                        class="circular-progress"
+                        data-inner-circle-color="lightgrey"
+                        data-percentage="75"
+                        data-progress-color="#84cd15"
+                        data-bg-color="#f8f8f8"
+                      >
+                        <div class="inner-circle"></div>
+                        <p class="percentage">0%</p>
+                      </div>
+                      <span>Pass Rate</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="ransomware-holder flex">
+              <div class="ransoware-left flex-col">
+                <span>Scheduled</span>
+                <div class="on-div">
+                  <span>2nd</span>
+                </div>
+                <span class="signup">Month</span>
+              </div>
+              <div class="ransoware-right">
+                <div class="ransoware-right-col1 flex-spc-btwn">
+                  <div class="ransomware-logo">
+                    <img src="assets/images/Bulletin News1.png" alt="" />
+                    <span>2FA Security</span>
+                  </div>
+                  <div class="ransomware-btn flex">
+                    <div class="training-group-right flex ransw-btn-gap">
+                      <a href="">
+                        <img src="assets/images/Eye Preview.png" alt="" />
+                        Preview
+                      </a>
+                      <img src="assets/images/Actions.png" alt="" />
+                    </div>
+                  </div>
+                </div>
+
+                <div class="ransoware-right-col2 flex">
+                  <div class="ransoware-right-col2-left">
+                    <p>
+                      <strong>Description:</strong> This episode is inspired
+                      schemes used to subvert 2FA via SMS. This Episode teaches
+                      about 2FA security. Difficulty: Hard
+                    </p>
+                    <p><strong>Difficulty:</strong> Hard</p>
+                  </div>
+                  <div class="ransoware-right-col2-right flex">
+                    <div class="circle-holder">
+                      <div class="ransoware-circle fst-crcle">
+                        <span>836</span>
+                      </div>
+                      <span>Enrolled</span>
+                    </div>
+                    <div class="circle-holder">
+                      <div class="ransoware-circle sec-circle">
+                        <span>651</span>
+                      </div>
+                      <span>Completed</span>
+                    </div>
+                    <div class="circle-holder">
+                      <div
+                        class="circular-progress"
+                        data-inner-circle-color="lightgrey"
+                        data-percentage="59"
+                        data-progress-color="#84cd15"
+                        data-bg-color="#f8f8f8"
+                      >
+                        <div class="inner-circle"></div>
+                        <p class="percentage">0%</p>
+                      </div>
+                      <span>Pass Rate</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="ransomware-holder flex">
+              <div class="ransoware-left flex-col">
+                <span>Scheduled</span>
+                <div class="on-div">
+                  <span>4th</span>
+                </div>
+                <span class="signup">Month</span>
+              </div>
+              <div class="ransoware-right">
+                <div class="ransoware-right-col1 flex-spc-btwn">
+                  <div class="ransomware-logo">
+                    <img src="assets/images/Bulletin News1.png" alt="" />
+                    <span>Email Misdelivery</span>
+                  </div>
+                  <div class="ransomware-btn flex">
+                    <div class="training-group-right flex ransw-btn-gap">
+                      <a href="">
+                        <img src="assets/images/Eye Preview.png" alt="" />
+                        Preview
+                      </a>
+                      <img src="assets/images/Actions.png" alt="" />
+                    </div>
+                  </div>
+                </div>
+
+                <div class="ransoware-right-col2 flex">
+                  <div class="ransoware-right-col2-left">
+                    <p>
+                      <strong>Description:</strong> This lesson based on email
+                      misdelivery and covers accidental insider threats and
+                      email misdelivery. Difficulty: Moderate
+                    </p>
+                    <p><strong>Difficulty:</strong> Moderate</p>
+                  </div>
+                  <div class="ransoware-right-col2-right flex">
+                    <div class="circle-holder">
+                      <div class="ransoware-circle fst-crcle">
+                        <span>836</span>
+                      </div>
+                      <span>Enrolled</span>
+                    </div>
+                    <div class="circle-holder">
+                      <div class="ransoware-circle sec-circle">
+                        <span>525</span>
+                      </div>
+                      <span>Completed</span>
+                    </div>
+                    <div class="circle-holder">
+                      <div
+                        class="circular-progress"
+                        data-inner-circle-color="lightgrey"
+                        data-percentage="71"
+                        data-progress-color="#84cd15"
+                        data-bg-color="#f8f8f8"
+                      >
+                        <div class="inner-circle"></div>
+                        <p class="percentage">0%</p>
+                      </div>
+                      <span>Pass Rate</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </div>
   </body>
 </html>
