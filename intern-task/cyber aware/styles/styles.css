@@ -85,7 +85,7 @@ img {
 header nav {
   display: flex;
   margin-top: 6px;
-  width: 903px;
+  /* width: 903px; */
   margin-left: 170px;
 }
 
@@ -435,9 +435,6 @@ header {
   color: #333333;
   display: inline-flex;
 }
-.training-group-right a:last-of-type {
-  margin-left: 8px;
-}
 
 /* chart section */
 
@@ -654,13 +651,19 @@ canvas {
 /* responsive code */
 .menu-toggle {
   cursor: pointer;
-  width: 77px;
-  height: 60px;
+  /* width: 77px;
+  height: 60px; */
   position: relative;
 }
+.header-logo a {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
 .menu-toggle .bar {
-  height: 15px;
-  width: 77px;
+  height: 4px;
+  width: 31px;
   background-color: var(--primary-color);
   margin: 4px 0;
   transition: 0.4s;
@@ -684,7 +687,7 @@ canvas {
 .overlay {
   display: none;
   position: fixed;
-  top: 0;
+  top: 80;
   left: 0 !important;
   height: 100%;
   width: 100%;
@@ -703,21 +706,44 @@ canvas {
   .container {
     max-width: 1440px;
     margin: 0 auto;
-    padding-inline: 50px;
+    padding-inline: 15px;
   }
   .header-profile-holder {
     display: none;
   }
   .main-content-left aside ul li a {
-    /* display: none; */
+    display: none;
     max-width: 0;
     overflow: hidden;
     white-space: nowrap;
     transition: 0.5s all ease;
   }
+  .main-content-left aside ul li:nth-child(1)::after {
+    left: 0 !important;
+  }
+  .main-content-left aside ul li:nth-child(1) {
+    padding-left: 0;
+  }
+  .main-content aside ul li {
+    padding-left: 0;
+    align-items: center;
+    justify-content: center;
+  }
+  .main-content-left aside ul li:nth-child(3) {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    margin-bottom: 0 !important;
+    padding-left: 0;
+  }
+  .main-content-left aside ul li:nth-child(4) {
+    padding-left: 0 !important;
+  }
+  header {
+    padding-block: 20px;
+  }
   .banner-sec {
-    margin-top: 166px;
-    padding-top: 100px;
+    /* margin-top: 166px; */
+    padding-top: 30px;
   }
   .menu-toggle {
     display: flex;
@@ -727,7 +753,7 @@ canvas {
   .nav-bar ul li {
     margin-left: 0 !important;
   }
-  header {
+  /* header {
     position: fixed;
     top: 0;
     left: 0;
@@ -736,10 +762,10 @@ canvas {
     padding-inline: 50px;
     align-items: center;
     box-shadow: 0 4px 4px -4px rgba(0, 0, 0, 0.5);
-  }
+  } */
   header nav {
     position: fixed;
-    top: 198px;
+    top: 72px;
     /* left: -171px; */
     /* width: 800px; */
     left: -1400px;
@@ -747,18 +773,21 @@ canvas {
     height: 100%;
     transition: 0.3s;
     padding-top: 60px;
+    padding-right: 30px;
   }
   header nav ul {
     display: flex;
     flex-direction: column;
     /* background-color: red; */
     width: 100%;
+    position: relative;
   }
   header nav ul li {
     margin-left: 0 !important;
     margin-bottom: 20px;
-    padding: 100px;
+    padding: 10px;
   }
+
   header nav ul li:nth-child(2) {
     margin-left: 0px !important;
   }
@@ -766,13 +795,14 @@ canvas {
     margin-left: 0 !important;
   }
   header nav ul li a {
-    font-size: 59px;
+    font-size: 14px;
     text-transform: uppercase;
     color: #e0e0e0;
     padding: 15px 20px;
   }
+
   .on-div span {
-    font-size: 40px !important;
+    font-size: 15px !important;
   }
   .active {
     left: -171px;
@@ -781,14 +811,14 @@ canvas {
     display: block;
   }
   .mobile-profile .header-profile-holder .header-profile {
-    width: 256px !important;
-    height: 256px !important;
+    width: 80px !important;
+    height: 80px !important;
   }
   .mobile-profile .header-profile-holder .header-profile span {
-    font-size: 59px;
+    font-size: 20px;
   }
   .header-logo a img {
-    width: 490px;
+    width: 120px;
     height: auto;
   }
   .overlay.active {
@@ -817,22 +847,26 @@ canvas {
   .nav-bar ul li.awarness-posters {
     margin-left: 0 !important;
   }
-  /* .banner-left h2 {
-    max-width: 100% !important;
-    font-size: 100px;
-    line-height: 110px;
-    margin-bottom: 25px;
-  } */
+  .banner-right {
+    align-self: center;
+  }
   .banner-right img {
     position: static;
   }
   .banner-small {
-    font-size: 30px;
+    font-size: 10px;
     line-height: 30px;
   }
   .main-content-mb {
     display: flex;
     /* flex-direction: column; */
+  }
+  .training-group-left figure {
+    width: 22px;
+    height: 22px;
+  }
+  .training-group-left h2 {
+    font-size: 15px;
   }
   .main-content-right {
     width: 90%;
@@ -846,24 +880,31 @@ canvas {
     font-size: 40px;
     line-height: 40px;
   }
+  .training-group-right a img {
+    width: 22px !important;
+    height: 22px !important;
+  }
+  .training-group-right a:last-of-type {
+    margin-top: 5px;
+  }
   .main-content-left aside ul li {
     margin-bottom: 20px;
   }
   .main-content aside ul li figure {
-    width: 50px !important;
-    height: 50px !important;
-    flex: 0 0 50px;
+    width: 20px !important;
+    height: 20px !important;
+    flex: 0 0 20px;
   }
-  .training-group-left figure {
+  /* .training-group-left figure {
     width: 60px !important;
     height: 60px !important;
-  }
+  } */
   .training-group-left {
     align-items: center;
   }
-  .training-group-left h2 {
-    font-size: 40px;
-  }
+  /* .training-group-left h2 {
+    /* font-size: 40px; */
+  /* }  */
   .aside-navlink.aside-a-block {
     /* display: block; */
     max-width: 999px;
@@ -878,7 +919,7 @@ canvas {
   }
   .training-group-right a {
     align-items: center;
-    font-size: 40px;
+    /* font-size: 40px; */
     border: 2px solid;
   }
   .training-group-right {
@@ -913,6 +954,9 @@ canvas {
   .active-sidebar .ransomware-btn .training-group-right {
     padding-left: 0px !important;
   }
+  .ransomware-btn {
+    justify-content: center;
+  }
   .ransoware-right-col2-right {
     flex-wrap: wrap;
   }
@@ -921,14 +965,14 @@ canvas {
   }
   .ransoware-left {
     width: 100%;
-    flex-direction: row;
+    /* flex-direction: row; */
     justify-content: space-around;
   }
-  .training-group-right a:last-of-type {
+  /* .training-group-right a:last-of-type {
     margin-left: 50px !important;
-  }
+  } */
   .ransoware-left > span {
-    font-size: 40px !important;
+    font-size: 15px !important;
   }
   .main-content-left aside {
     position: relative;
@@ -946,29 +990,28 @@ canvas {
 
     background-size: contain;
   } */
+
   .ransoware-left .signup {
-    font-size: 40px !important;
-  }
-  .ransoware-left .signup {
-    font-size: 40px !important;
+    font-size: 15px !important;
   }
   .ransoware-right {
     width: 100%;
   }
   .ransomware-logo img {
-    width: 80px;
-    height: 80px;
+    width: 32px;
+    height: 32px;
     object-fit: cover;
   }
 
   .ransomware-logo span {
-    font-size: 50px;
+    font-size: 24px;
   }
   .ransoware-right-col1 {
     padding-block: 40px;
+    flex-direction: column;
   }
   .training-group-right a + img {
-    width: 80px;
+    width: 55px;
   }
   .ransoware-right-col2 {
     flex-direction: column;
@@ -1002,8 +1045,8 @@ canvas {
   }
   .circular-progress,
   .on-div {
-    width: 240px;
-    height: 240px;
+    width: 150px;
+    height: 150px;
   }
   .inner-circle {
     width: calc(240px - 40px);
@@ -1033,17 +1076,52 @@ canvas {
   .main-content-left.active-sidebar {
     width: 45%;
   }
+  .ransomware-logo {
+    justify-content: center;
+  }
   .main-content-right.active-sidebar {
     width: 55%;
   }
-  header {
+  /* header {
     padding-top: 77px;
     padding-bottom: 57px;
+  } */
+
+  header nav ul li a::after {
+    content: none !important;
   }
-  .ransoware-left {
-    padding-left: 34px;
+  header nav ul li::before {
+    content: "";
+    background: transparent url("/assets/images/Open\ Down\ Arrow.png")
+      no-repeat scroll 0 0 / cover;
+    display: block;
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    right: 0;
+
+    background-size: contain;
+  }
+  header nav ul li:nth-child(2):before {
+    content: none;
+  }
+  header nav ul li:nth-child(5):before {
+    content: none;
+  }
+
+  .banner-left h2 {
+    font-size: 20px;
+    /* max-width: 100px; */
+    /* text-align: justify; */
+  }
+  .banner-left {
+    padding-top: 0 !important;
+  }
+  .banner-small {
+    margin-bottom: 0 !important;
   }
 }
+
 @media (max-width: 1560px) {
   .ransoware-right-col2-right {
     gap: 20px !important;
@@ -1053,5 +1131,19 @@ canvas {
   }
   header nav ul li:nth-child(4) {
     margin-left: 20px !important;
+  }
+
+  header nav ul li a::after {
+    content: "";
+    background: transparent url("/assets/images/Open\ Down\ Arrow.png")
+      no-repeat scroll 0 0 / cover;
+    display: block;
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    background-size: contain;
   }
 }
