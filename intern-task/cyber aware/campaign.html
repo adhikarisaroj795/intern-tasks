@@ -9,7 +9,6 @@
     <!-- Latest compiled and minified Chart.js -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.1/chart.min.js"></script>
 
-    <script src="scripts/chart.js" defer></script>
     <script src="scripts/app.js" defer></script>
   </head>
   <body>
@@ -190,11 +189,129 @@
 
                 <div class="campaign-area-form-holder">
                   <form>
-                    <div class="label-wrapper">
-                      <label>Sending campaign date</label>
-                      <input type="text" placeholder="Select date" />
+                    <div class="form-input flex">
+                      <div class="date-input-container">
+                        <label for="campaign-date">select date</label>
+                        <div class="custom-date-input">
+                          <input
+                            type="date"
+                            id="date-input"
+                            placeholder="select
+                        date"
+                            class="date-input"
+                          />
+                          <span class="placeholder-text">Select Date</span>
+                          <div class="small-logo-holder" id="icon-click">
+                            <img
+                              src="assets/images/Open Down Arrow.png"
+                              alt=""
+                            />
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="date-input-container">
+                        <label for="campaign-date">Sending group</label>
+                        <div class="custom-date-input">
+                          <select
+                            id="fruit-select"
+                            name="fruit"
+                            class="date-input"
+                          >
+                            <option value="apple">Apple</option>
+                            <option value="banana">Banana</option>
+                            <option value="cherry">Cherry</option>
+                          </select>
+                          <span class="placeholder-text">Sending group</span>
+                          <div class="small-logo-holder" id="icon-click">
+                            <img
+                              src="assets/images/Open Down Arrow.png"
+                              alt=""
+                            />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="form-input flex">
+                      <div class="date-input-container">
+                        <label for="campaign-date">Sending email address</label>
+                        <div class="custom-date-input">
+                          <select
+                            id="fruit-select"
+                            name="fruit"
+                            class="date-input"
+                          >
+                            <option value="apple">Apple</option>
+                            <option value="banana">Banana</option>
+                            <option value="cherry">Cherry</option>
+                          </select>
+                          <span class="placeholder-text"
+                            >Sending email address</span
+                          >
+                          <div class="small-logo-holder" id="icon-click">
+                            <img
+                              src="assets/images/Open Down Arrow.png"
+                              alt=""
+                            />
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="date-input-container">
+                        <label for="campaign-date">Send from name</label>
+                        <div class="custom-date-input">
+                          <input type="text" class="date-input above-input" />
+                          <span class="placeholder-text-above placeholder-text"
+                            >Name</span
+                          >
+                          <div class="small-logo-holder" id="icon-click">
+                            <img
+                              src="assets/images/Open Down Arrow.png"
+                              alt=""
+                            />
+                          </div>
+                        </div>
+                      </div>
+                      <div class="date-input-container">
+                        <label for="campaign-date">Email subject</label>
+                        <div class="custom-date-input">
+                          <input
+                            type="text"
+                            id="date-input"
+                            placeholder="Subject"
+                            class="date-input"
+                          />
+                        </div>
+                      </div>
                     </div>
                   </form>
+                </div>
+
+                <div class="attachmment-holder p-left-32 flex">
+                  <div class="attachment-field">
+                    <input type="file" id="fileInput" class="file-input" />
+                    <label for="fileInput" class="file-label">
+                      <div class="file-data">
+                        <span><strong>Attachment</strong>(optionl)</span>
+                      </div>
+                      <div class="small-logo-holder">
+                        <img src="assets/images/Open Down Arrow.png" alt="" />
+                      </div>
+                    </label>
+                    <div class="file-name" id="fileName">No file chosen</div>
+                  </div>
+                  <div class="attachment-field">
+                    <input type="file" id="fileInput" class="file-input" />
+                    <label for="fileInput" class="file-label">
+                      <div class="file-data">
+                        <span><strong>Attachment</strong>(optionl)</span>
+                      </div>
+                      <div class="small-logo-holder">
+                        <img src="assets/images/Open Down Arrow.png" alt="" />
+                      </div>
+                    </label>
+                    <div class="file-name" id="fileName">No file chosen</div>
+                  </div>
                 </div>
               </div>
             </div>
