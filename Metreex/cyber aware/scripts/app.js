@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   const asidebtn = document.querySelector(".aside-arrow");
   asidebtn.addEventListener("click", () => {
-    document.querySelector(".aside-nav").classList.toggle("aside-active");
+    document.querySelector(".aside-nav").classList.toggle("aside-side-active");
     document.querySelector(".overlay3").classList.toggle("active3");
   });
 
